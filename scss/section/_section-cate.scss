@@ -1,0 +1,181 @@
+.section-cate {
+  margin-top: 30px;
+  .main-content {
+    @include flexbox;
+    .aside {
+      display: none;
+    }
+    @include media-breakpoint-up(lg) {
+      .aside {
+        display: block;
+        width: 270px;
+
+      }
+      .content {
+        @include flex(1);
+        margin-left: 30px;
+      }
+    }
+  }
+  .aside-sidebar  {
+    background-color: $white;
+    border: 1px solid $border-color;
+    .aside-title {
+      padding: 12px;
+      background-color: $primary;
+      color: $white;
+      @include flexbox;
+      .h3 {
+        margin: auto;
+        @include font-size(18px);
+      }
+    }
+    .aside-list {
+      padding-top: 12px;
+      padding-left: 12px;
+      padding-right: 12px;
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          &+li {
+            margin-top: 4px;
+          }
+          @include font-size(15px);
+          font-weight: 300;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .box-content {
+    margin-top: 12px;
+    .card {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 0;
+      .card-img {
+        a {
+          display: block;
+          position: relative;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+        width: 100%;
+      }
+      .card-body {
+        padding: 0;
+        .card-title {
+          margin-top: 8px;
+          margin-bottom: 6px;
+          @include hover-focus-active {
+            a {
+              color: $primary;
+            }
+          }
+          a {
+            color: #000000;
+            text-decoration: none;
+          }
+        }
+        .card-desc {
+          margin-top: 4px;
+          line-height: 18px;
+          @include font-size(14px);
+          font-weight: 300;
+        }
+      }
+
+    }
+  }
+}
+
+.aside-menu {
+  .aside-menu-title {
+    @include flexbox;
+    background-color: $primary;
+    color: $white;
+    padding: 10px 12px;
+    @include font-size(20px);
+
+    .aside-menu-title-icon {
+      margin-left: 6px;
+      margin-right: 12px;
+    }
+
+    .aside-menu-title-text {
+      font-weight: bold;
+    }
+  }
+
+  .aside-menu-content {
+    border: 1px solid $border-color;
+    border-top: 0;
+
+    .aside-menu-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .nav-item {
+        border-top: 1px solid $border-color;
+
+        .nav-link {
+          @include flexbox;
+          padding: 10px 18px;
+          color: #333;
+
+          i {
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            color: $primary;
+
+            &.fa-caret-down {
+              display: none;
+            }
+          }
+        }
+
+        .aside-menu-navsub {
+          list-style: none;
+          padding: 0;
+          display: none;
+        }
+        &.nav-item-has-sub {
+          @include hover-focus-active{
+            .nav-link-has-sub {
+              color: $primary;
+              .fa-caret-right {
+                display: none;
+              }
+              .fa-caret-down {
+                display: block;
+              }
+            }
+            .aside-menu-navsub {
+              display: block;
+
+            }
+          }
+        }
+        .aside-menu-navsub {
+          .nav-item {
+            @include hover-focus-active {
+              .nav-link {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+

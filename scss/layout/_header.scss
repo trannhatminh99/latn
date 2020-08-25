@@ -1,3 +1,118 @@
 /* ==========================================================================
 Header
 ========================================================================== */
+.header-top {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    @include flexbox;
+    background-color: $secondary;
+    .nav {
+      @include justify-content(space-between);
+    }
+    .nav-item {
+      @include flexbox;
+
+      .nav-link {
+        margin-top: auto;
+        margin-bottom: auto;
+        color: $white;
+        @include font-size(13px);
+        @include flexbox;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        padding-left: 24px;
+        padding-right: 24px;
+        font-weight: 500;
+        i {
+          @include font-size(20px);
+        }
+        span {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+.header-navbar {
+  @include media-breakpoint-down(md) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+  }
+  background-color: $secondary;
+  .logo {
+    width: 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    background-color: transparent;
+    .bg-secondary {
+      z-index: $zindex-fixed - 1;
+      -moz-box-shadow: 0 0px 29px 0 rgba(0, 0, 0, 0.8);
+      -webkit-box-shadow: 0 0px 29px 0 rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0px 29px 0 rgba(0, 0, 0, 0.8);
+      @include border-radius(5px);
+      margin-top: -18px;
+    }
+
+    .nav-item {
+      &.active {
+        .nav-link {
+          color: $primary;
+        }
+      }
+      @include hover-focus-active {
+        .nav-link {
+          color: $primary;
+        }
+        .dropdown-menu {
+          display: block;
+        }
+      }
+      .nav-link {
+        color: $white;
+        @include font-size(14px);
+        font-weight: 600;
+        padding: 18px 8px;
+
+      }
+    }
+    .form-inline {
+      @include font-size(16px);
+      .btn {
+        color: $white;
+        @include hover-focus-active {
+          color: $primary;
+        }
+      }
+      .dropdown-user {
+        .dropdown-menu {
+          width: 300px;
+          padding: 2px;
+        }
+      }
+    }
+    .dropdown-menu {
+      .dropdown-item {
+        @include hover-focus-active {
+          background-color: transparent;
+          color: $primary;
+        }
+      }
+    }
+  }
+
+}
+.navbar-toggler-sidebar {
+  display: block;
+  color: $white;
+  @include hover-focus-active {
+    color: $white;
+  }
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}

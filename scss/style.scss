@@ -24,12 +24,17 @@
 //
 // =Third parties
 // --------------------------------------------------
+@import '../third_party/slick/slick/slick-theme.scss';
+@import '../third_party/slick/slick/slick.scss';
+@import 'third_party/slick/slick.scss';
+
 //
 // =Partials
 // --------------------------------------------------
 @import 'partials/fonts';
 @import 'partials/icons';
 @import 'partials/scrollbar-measure';
+@import 'partials/main-menu';
 //
 // =Modules
 // --------------------------------------------------
@@ -46,3 +51,9 @@
 // =Pages
 // --------------------------------------------------
 @import 'pages/home';
+@import 'pages/detail';
+//
+// =Section
+@import 'section/section-products';
+@import 'section/section-cate';
+//

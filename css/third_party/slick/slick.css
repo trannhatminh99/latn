@@ -1,0 +1,240 @@
+/*p {
+  @include font-size(14px)
+}*/
+/*body {
+  @include background-image('pattern');
+}*/
+/*
+@include keyframes(slide-down) {
+  0% { opacity: 1; }
+  90% { opacity: 0; }
+}
+
+.element {
+  width: 100px;
+  height: 100px;
+  background: black;
+  @include animation('slide-down 5s 3');
+}*/
+/*
+.faded-text {
+  @include opacity(0.8);
+}
+*/
+/*.parent {
+  position: relative;
+}
+
+.child {
+  &.both {
+    @include center;
+  }
+
+  &.horizontal {
+    @include center(true, false);
+  }
+
+  &.vertical {
+    @include center(false, true);
+  }
+}*/
+.section-slider .slick-dots > li {
+  width: auto;
+  height: auto;
+}
+
+.section-slider .slick-dots > li.slick-active button {
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.section-slider .slick-dots > li.slick-active button:before {
+  border-radius: 50%;
+  color: #fff;
+  opacity: 1;
+}
+
+.section-slider .slick-dots > li button {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  position: relative;
+  opacity: 1;
+}
+
+.section-slider .slick-dots > li button:before {
+  position: absolute;
+  background-color: transparent;
+  font-size: 2.1875rem;
+  color: #fff;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 992px) {
+  .section-slider .slick-dots > li button {
+    width: 24px;
+    height: 24px;
+  }
+  .section-slider .slick-dots > li button:before {
+    font-size: 2.75rem;
+  }
+}
+
+.slider-list-full .slick-dots > li {
+  width: 76px;
+  height: 6px;
+}
+
+.slider-list-full .slick-dots > li button {
+  position: relative;
+  width: 70px;
+  height: 6px;
+  padding: 0;
+}
+
+.slider-list-full .slick-dots > li button:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: '';
+  background-color: #6bb42f;
+  border-radius: 20px;
+}
+
+.product-list .slick-dotted {
+  padding-bottom: 20px;
+}
+
+.product-list .slick-arrow {
+  padding: 0;
+  border-width: 0;
+  background-image: none;
+  background-color: transparent;
+  text-indent: -9999px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 10;
+  cursor: pointer;
+  width: 30px;
+  height: 60px;
+  overflow: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .product-list .slick-arrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.product-list .slick-arrow:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-list .slick-arrow:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(107, 180, 47, 0.5);
+}
+
+.product-list .slick-arrow, .product-list .slick-arrow:hover, .product-list .slick-arrow:focus {
+  outline-style: none;
+}
+
+.product-list .slick-arrow:hover:before {
+  background-color: #6bb42f;
+}
+
+.product-list .slick-arrow.slick-prev {
+  left: 13px;
+}
+
+.product-list .slick-arrow.slick-prev:before {
+  margin-left: -15px;
+}
+
+.product-list .slick-arrow.slick-prev:after {
+  content: '';
+  margin-left: -5px;
+  display: block;
+  height: 0;
+  width: 0;
+  border-top: 8px solid transparent;
+  border-right: 10px solid #fff;
+  border-bottom: 8px solid transparent;
+}
+
+@media (max-width: 767.98px) {
+  .product-list .slick-arrow.slick-prev:after {
+    margin-left: -3px;
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 8px solid transparent;
+    border-right: 9px solid #fff;
+    border-bottom: 8px solid transparent;
+  }
+}
+
+.product-list .slick-arrow.slick-next {
+  right: 13px;
+}
+
+.product-list .slick-arrow.slick-next:before {
+  margin-left: 15px;
+}
+
+.product-list .slick-arrow.slick-next:after {
+  content: '';
+  margin-left: 5px;
+  display: block;
+  height: 0;
+  width: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid #fff;
+}
+
+@media (max-width: 767.98px) {
+  .product-list .slick-arrow.slick-next:after {
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 9px solid #fff;
+  }
+}
+
+.product-list .slider-with-text .slick-arrow {
+  margin-top: -3.25rem;
+}
+
+.product-list .slider-with-text .card-title a {
+  max-height: 4.5rem;
+  height: 4.5rem;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+/*# sourceMappingURL=slick.css.map */

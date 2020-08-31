@@ -74,10 +74,10 @@ Header
       }
       .nav-link {
         color: $white;
-        @include font-size(14px);
+        @include font-size(10px);
         font-weight: 600;
         padding: 18px 8px;
-
+        text-transform: uppercase;
       }
     }
     .form-inline {
@@ -104,7 +104,17 @@ Header
       }
     }
   }
-
+  @include media-breakpoint-up(xl) {
+    .nav-item {
+      .nav-link {
+        color: $white;
+        @include font-size(14px);
+        font-weight: 600;
+        padding: 18px 8px;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 .navbar-toggler-sidebar {
   display: block;

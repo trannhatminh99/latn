@@ -22,7 +22,10 @@
     color: $white;
 
     .slider-text {
-      @include font-size(18px);
+      @include font-size(20px);
+      @include media-breakpoint-up(lg) {
+        @include font-size(40px);
+      }
       font-weight: 600;
     }
 
@@ -31,7 +34,7 @@
       @include media-breakpoint-up(sm) {
         display: block;
       }
-      @include font-size(16px);
+      @include font-size(20px);
       font-weight: 300;
     }
   }
@@ -114,6 +117,21 @@
 }
 
 .section-products {
+  &.section-tech {
+    .box-title {
+      color: red;
+    }
+  }
+  &.section-head {
+    .box-title {
+      color: #6bb42f;
+    }
+  }&.section-edu {
+    .box-title {
+      color: #ff8c00;
+    }
+  }
+
   .product-top, .product-featured {
     .card {
       position: relative;
@@ -228,22 +246,28 @@
     top: 0;
     width: 100%;
   }
+
   @include flexbox;
+
   .core-value {
     z-index: $zindex-fixed - 3;
     padding: 24px;
+
     .core-value-title {
       color: $white;
       @include font-size(20px);
     }
+
     .core-value-list {
       padding: 0;
       list-style: none;
       color: $white;
+
       li {
         span {
           margin-left: 6px;
         }
+
         @include font-size(14px);
         line-height: 30px;
       }
@@ -256,10 +280,12 @@
       margin-left: auto;
       margin-top: auto;
       margin-bottom: auto;
+
       .core-value-title {
         color: $white;
         @include font-size(24px);
       }
+
       .core-value-list {
         li {
           @include font-size(16px);
@@ -275,32 +301,40 @@
   }
 
 }
+
 .section-review {
   .slick-track {
     padding-top: 70px;
   }
+
   .review-slider-item {
     padding: 10px;
+
     .info-wrap {
       position: relative;
+
       .info-avatar {
         border: solid 1px #ccc;
         position: absolute;
         top: -50px;
         left: 27px;
+
         img {
           width: 70px;
           padding: 2px;
         }
       }
+
       .info-content {
         border: 1px solid $border-color;
         padding: 24px;
+
         .info-title {
           @include font-size(16px);
           font-weight: 800;
           margin-bottom: 6px;
         }
+
         .info-desc {
           @include font-size(13px);
           line-height: 18px;
@@ -311,49 +345,65 @@
 }
 
 .project-list {
-    .project-item-article {
-      @include flexbox;
-      .article-img {
-        position: relative;
-        height: 280px;
-        width: 457px;
-        img {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-        }
+  .project-item-article {
+    @include flex-direction(column);
+    @include media-breakpoint-up(lg) {
+      @include flex-direction(row);
+    }
+    @include flexbox;
+
+    .article-img {
+      position: relative;
+      height: 280px;
+      width: 457px;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
       }
-      .article-info {
-        @include flex(1);
+    }
+
+    .article-info {
+      @include flex(1);
+      padding: 0;
+      @include media-breakpoint-up(lg) {
         padding: 24px;
-        background-color: $white;
-        .article-title {
-          @include font-size(25px);
+      }
+      background-color: $white;
+
+      .article-title {
+        @include font-size(25px);
+        color: $primary;
+        font-weight: 600;
+      }
+
+      .article-author {
+        margin-top: 6px;
+        margin-bottom: 6px;
+
+        i {
           color: $primary;
-          font-weight: 600;
-        }
-        .article-author {
-          margin-top: 6px;
-          margin-bottom: 6px;
-          i {
-            color: $primary;
-          }
-          span {
-            color: #000;
-            font-weight: 500;
-          }
-        }
-        .article-desc {
-          @include font-size(14px);
-          line-height: 18px;
-        }
-        .btn {
-          margin-top: 12px;
         }
 
+        span {
+          color: #000;
+          font-weight: 500;
+        }
+      }
+
+      .article-desc {
+        @include font-size(14px);
+        line-height: 18px;
+      }
+
+      .btn {
+        margin-top: 12px;
       }
 
     }
+
+  }
 
 }
 

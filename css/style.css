@@ -11226,9 +11226,10 @@ Header
   }
   .header-navbar .nav-item .nav-link {
     color: #fff;
-    font-size: 0.875rem;
+    font-size: 0.625rem;
     font-weight: 600;
     padding: 18px 8px;
+    text-transform: uppercase;
   }
   .header-navbar .form-inline {
     font-size: 1rem;
@@ -11246,6 +11247,16 @@ Header
   .header-navbar .dropdown-menu .dropdown-item:hover, .header-navbar .dropdown-menu .dropdown-item:focus, .header-navbar .dropdown-menu .dropdown-item:active {
     background-color: transparent;
     color: #6bb42f;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-navbar .nav-item .nav-link {
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 18px 8px;
+    text-transform: uppercase;
   }
 }
 
@@ -11315,13 +11326,19 @@ Footer
 }
 
 .section-slider .slider-content .slider-text {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  .section-slider .slider-content .slider-text {
+    font-size: 2.5rem;
+  }
 }
 
 .section-slider .slider-content .slider-description {
   display: none;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -11420,6 +11437,18 @@ Footer
   .section-about .about-wrap .info-title {
     font-size: 1.5rem;
   }
+}
+
+.section-products.section-tech .box-title {
+  color: red;
+}
+
+.section-products.section-head .box-title {
+  color: #6bb42f;
+}
+
+.section-products.section-edu .box-title {
+  color: #ff8c00;
 }
 
 .section-products .product-top .card, .section-products .product-featured .card {
@@ -11621,11 +11650,28 @@ Footer
 }
 
 .project-list .project-item-article {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 992px) {
+  .project-list .project-item-article {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 .project-list .project-item-article .article-img {
@@ -11647,8 +11693,14 @@ Footer
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 24px;
+  padding: 0;
   background-color: #fff;
+}
+
+@media (min-width: 992px) {
+  .project-list .project-item-article .article-info {
+    padding: 24px;
+  }
 }
 
 .project-list .project-item-article .article-info .article-title {
@@ -11957,7 +12009,9 @@ Footer
 }
 
 .section-products .box-header .box-title {
-  font-size: 1.75rem;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 8px;
 }

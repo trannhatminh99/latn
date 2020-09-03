@@ -12072,6 +12072,8 @@ Footer
 
 .section-breadcrumb .content .breadcrumb-small span {
   color: #fff;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .section-product-order {
@@ -12118,6 +12120,11 @@ Footer
 .product-single-content .product-header .product-title {
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+.product-single-content .product-header span {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
 }
 
 .product-single-content .product-body .product-body-wrap {
@@ -12275,6 +12282,19 @@ Footer
 
 .photo-wrap .photo-controls {
   margin-top: 12px;
+}
+
+.photo-wrap .photo-controls .splide__track {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
 }
 
 .photo-wrap .splide__arrow {

@@ -37,6 +37,8 @@
 
       span {
         color: $white;
+        margin-left: 3px;
+        margin-right: 3px;
       }
     }
   }
@@ -77,6 +79,10 @@
     .product-title {
       @include font-size(20px);
       font-weight: 700;
+    }
+    span {
+      @include font-size(13px);
+      text-transform: uppercase;
     }
 
     border-bottom: 1px solid #e6e6e6;
@@ -215,6 +221,10 @@
   }
   .photo-controls {
     margin-top: 12px;
+    .splide__track {
+      @include flexbox;
+      @include justify-content(center);
+    }
   }
   .splide__arrow {
     background-color: $primary;
@@ -261,6 +271,7 @@
     }
   }
 }
+
 .ytp-cued-thumbnail-overlay-image {
   background-size: cover;
   -moz-background-size: cover;

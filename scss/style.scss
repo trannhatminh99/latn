@@ -24,9 +24,9 @@
 //
 // =Third parties
 // --------------------------------------------------
-  @import '../third_party/slick/slick/slick-theme.scss';
-  @import '../third_party/slick/slick/slick.scss';
-  @import 'third_party/slick/slick.scss';
+@import '../third_party/slick/slick/slick-theme.scss';
+@import '../third_party/slick/slick/slick.scss';
+@import 'third_party/slick/slick.scss';
 
 //
 // =Partials
@@ -52,6 +52,7 @@
 // --------------------------------------------------
 @import 'pages/home';
 @import 'pages/detail';
+@import 'pages/order';
 //
 // =Section
 @import 'section/section-products';

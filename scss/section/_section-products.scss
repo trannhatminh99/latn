@@ -14,7 +14,7 @@
       margin: 0 auto;
       line-height: 18px;
       text-align: center;
-      @include font-size(14px);
+      @include font-size(18px);
       font-weight: 400;
       @include media-breakpoint-up(lg) {
         width: 70%;

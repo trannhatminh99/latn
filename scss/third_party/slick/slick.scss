@@ -8,12 +8,12 @@
 
       &.slick-active {
         button {
-          border: 1px solid $white;
+          border: 1px solid #655353;
           @include border-radius(50%);
 
           &:before {
             @include border-radius(50%);
-            color: $white;
+            color: #655353;
             opacity: 1;
           }
         }
@@ -22,7 +22,7 @@
       button {
         width: 20px;
         height: 20px;
-        color: $white;
+        color: #655353;
         position: relative;
         opacity: 1;
 
@@ -30,7 +30,7 @@
           position: absolute;
           background-color: transparent;
           @include font-size(35px);
-          color: $white;
+          color: #655353;
           opacity: 1;
           @include center();
         }

@@ -11,6 +11,9 @@
 
       img {
         width: 100%;
+        @include media-breakpoint-up(lg) {
+          height: 900px;
+        }
         height: auto;
       }
     }
@@ -80,11 +83,16 @@
       @include font-size(18px);
     }
 
-    .info-content p {
-      @include font-size(14px);
-      font-weight: 400;
-      line-height: 18px;
-      margin-bottom: 12px;
+    .info-content {
+      p {
+        @include font-size(14px);
+        font-weight: 600;
+        line-height: 18px;
+        margin-bottom: 12px;
+      }
+      ul {
+        padding-left: 18px;
+      }
     }
 
     @include media-breakpoint-up(lg) {

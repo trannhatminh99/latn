@@ -156,6 +156,7 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
       ]
     })
   }
+
   function project() {
     $('.project-list').slick({
       autoplay: true,
@@ -163,45 +164,60 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
       infinite: true
     })
   }
+
   function lazyload() {
-      var lazyloadImages = document.querySelectorAll("img.lazy");
-      var lazyloadThrottleTimeout;
+    var lazyloadImages = document.querySelectorAll('img.lazy')
+    var lazyloadThrottleTimeout
 
-      function lazyload () {
-        if(lazyloadThrottleTimeout) {
-          clearTimeout(lazyloadThrottleTimeout);
-        }
-
-        lazyloadThrottleTimeout = setTimeout(function() {
-          var scrollTop = window.pageYOffset;
-          lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              img.classList.remove('lazy');
-            }
-          });
-          if(lazyloadImages.length == 0) {
-            document.removeEventListener("scroll", lazyload);
-            window.removeEventListener("resize", lazyload);
-            window.removeEventListener("orientationChange", lazyload);
-          }
-        }, 20);
+    function lazyload() {
+      if (lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout)
       }
 
+      lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset
+        lazyloadImages.forEach(function(img) {
+          if (img.offsetTop < (window.innerHeight + scrollTop)) {
+            img.src = img.dataset.src
+            img.classList.remove('lazy')
+          }
+        })
+        if (lazyloadImages.length == 0) {
+          document.removeEventListener('scroll', lazyload)
+          window.removeEventListener('resize', lazyload)
+          window.removeEventListener('orientationChange', lazyload)
+        }
+      }, 20)
+    }
 
-    document.addEventListener("scroll", lazyload);
-      window.addEventListener("resize", lazyload);
-      window.addEventListener("orientationChange", lazyload);
+
+    document.addEventListener('scroll', lazyload)
+    window.addEventListener('resize', lazyload)
+    window.addEventListener('orientationChange', lazyload)
   }
+
   function toggleAside() {
     $('.js-toggleAside').on('click', function() {
       $('body').toggleClass('active-toggleAside')
     })
   }
+
   function closetoggleAside() {
     $('.js-close-toggleAside').on('click', function() {
       $('body').removeClass('active-toggleAside')
     })
+  }
+
+  function scrollToAnchor() {
+    $(window).scroll(function(){
+      var sticky = $('body'),
+        scroll = $(window).scrollTop();
+      console.log(scroll);
+
+      if (scroll >= 79) sticky.addClass('body-fixed');
+      else sticky.removeClass('body-fixed');
+    });
+
   }
 
   function init() {
@@ -216,6 +232,7 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
     lazyload()
     closetoggleAside()
     toggleAside()
+    scrollToAnchor()
   }
 
   $(document).ready(function() {

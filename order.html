@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Frontend Seed 4</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="canonical" href="http://">
+  <meta name="title" content="Frontend Seed 4 - Title">
+  <meta name="referrer" content="unsafe-url">
+  <meta name="description" content="Frontend Seed 4 - Description">
+
+  <meta property="fb:app_id" content="your_app_id">
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="article:publisher" content="">
+  <meta property="article:section" content="Article">
+  <meta property="article:published_time" content="">
+  <meta property="article:modified_time" content="">
+  <meta property="og:updated_time" content="">
+  <meta property="og:image" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:creator" content="">
+  <!-- App CSS -->
+  <style>
+    :root {
+      --theme-color: #007bff;
+      --bg-color: #ffffff;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    .app-loading {
+      background: var(--bg-color);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes bouncing-loader {
+      to {
+        opacity: 0.1;
+        transform: translate3d(0, -1rem, 0);
+      }
+    }
+
+    .app-loading .bouncing-loader {
+      display: flex;
+      justify-content: center;
+    }
+
+    .app-loading .bouncing-loader > div {
+      width: 1rem;
+      height: 1rem;
+      margin: 3rem 0.2rem;
+      background: var(--theme-color);
+      border-radius: 50%;
+      animation: bouncing-loader 0.6s infinite alternate;
+    }
+
+    .app-loading .bouncing-loader > div:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .app-loading .bouncing-loader > div:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+  </style>
+  <link rel='preload' href='dist/app.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="dist/app.min.css">
+  </noscript>
+  <!--  <link rel="stylesheet" href="css/style.css">-->
+  <link rel="stylesheet" href="customs/style.css">
+  <link rel="stylesheet" href="third_party/splide-master/dist/css/splide.min.css">
+</head>
+
+<body>
+<div class="app-loading">
+  <div class="bouncing-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<div class="wrapper" id="site_wrapper">
+  <header class="header" id="header">
+    <div class="header-top">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="tel:0902 719 168"><i class="fas fa-phone"></i><span>0902 719 168</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:info@gmail.com"><i
+              class="far fa-envelope-open"></i><span>info@gmail.com</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i
+              class="far fa-clock"></i><span>Mở cửa : Từ 8h30 - 17h30</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button class="btn btn-primary">Mua hàng ngay</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-navbar">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo" alt=""></a>
+          <button class="btn navbar-toggler-sidebar js-toggleAside d-lg-none" type="button">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="tech.html">
+                  Dịch vụ kỹ thuật
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a>
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                    công nghiệp</a>
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế và thi công điện công trình dân dụng và công
+                    nghiệp</a>
+                  <a class="dropdown-item" href="#">Thi công, bảo trì các công trình viễn thông</a>
+                  <a class="dropdown-item" href="#">Nghiên cứu, thiết kế và thi công các hệ thống IoT</a>
+                  <a class="dropdown-item" href="#">Thiết kế website </a>
+                  <a class="dropdown-item" href="#">Gia công phần mềm</a>
+                </div>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="health.html">
+                  Dịch vụ sức khỏe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Giới thiệu</a>
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế, thi công các phòng tập thể dục</a>
+                  <a class="dropdown-item" href="#">Bảo trì, sửa chữa các thiết bị phòng tập thể dục</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="edu.html">
+                  Dịch vụ đào tạo
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Đào tạo nguồn nhân lực</a>
+                  <a class="dropdown-item" href="#">Cung ứng nguồn nhân lực</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <div class="dropdown dropdown-user">
+                <buttun class="btn" type="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><i class="fas fa-search"></i></buttun>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownSearch">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username"
+                           aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><i class="fas fa-user"></i></button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownUser">
+                  <a class="dropdown-item" href="#">Đăng nhập</a>
+                  <a class="dropdown-item" href="#">Đăng ký</a>
+                </div>
+              </div>
+              <button class="btn" type="button"><i class="fas fa-cart-plus"></i></button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main" id="main">
+    <div class="main-menu">
+      <button class="btn btn-close js-close-toggleAside" type="button">ĐÓNG <i class="fas fa-times"></i></button>
+      <form class="input-group input-search">
+        <input type="text" class="form-control" placeholder="Nhập từ khoá" aria-label="Text input with dropdown button">
+        <div class="input-group-append">
+          <button class="btn" type="button"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+      <ul class="main-aside-nav">
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fa fa-home"></i>
+            <span>Trang chủ</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="far fa-comment"></i>
+            <span>Giới thiệu</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item-has-sub">
+          <a class="nav-link" data-toggle="collapse" href="#collapserTech" role="button" aria-expanded="false"
+             aria-controls="collapserProduct">
+            <i class="fas fa-microchip"></i>
+            <span>Dịch vụ kỹ thuật</span>
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+          </a>
+          <div class="collapse" id="collapserTech">
+            <ul class="main-aside-navsub">
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a></li>
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                công nghiệp</a></li>
+              <li><a class="nav-link" href="#">Đồng hồ đo nhiệt độ</a></li>
+              <li><a class="nav-link" href="#">THIẾT BỊ PHÂN TÍCH NƯỚC</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item nav-item-has-sub">
+          <a class="nav-link" data-toggle="collapse" href="#collapserHealth" role="button" aria-expanded="false"
+             aria-controls="collapserProduct">
+            <i class="fas fa-heartbeat"></i>
+            <span>Dịch vụ sức khỏe</span>
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+          </a>
+          <div class="collapse" id="collapserHealth">
+            <ul class="main-aside-navsub">
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a></li>
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                công nghiệp</a></li>
+              <li><a class="nav-link" href="#">Đồng hồ đo nhiệt độ</a></li>
+              <li><a class="nav-link" href="#">THIẾT BỊ PHÂN TÍCH NƯỚC</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item nav-item-has-sub">
+          <a class="nav-link" data-toggle="collapse" href="#collapserEdu" role="button" aria-expanded="false"
+             aria-controls="collapserProduct">
+            <i class="fas fa-shapes"></i>
+            <span>Dịch vụ đào tạo</span>
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+          </a>
+          <div class="collapse" id="collapserEdu">
+            <ul class="main-aside-navsub">
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a></li>
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                công nghiệp</a></li>
+              <li><a class="nav-link" href="#">Đồng hồ đo nhiệt độ</a></li>
+              <li><a class="nav-link" href="#">THIẾT BỊ PHÂN TÍCH NƯỚC</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="far fa-envelope"></i>
+            <span>Liên hệ </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="section-breadcrumb">
+      <div class="container">
+        <div class="content">
+          <h2 class="breadcrumb-title">
+            Bộ tưới cây nhỏ giọt GF KIT 12 - Hàng Ý
+          </h2>
+          <div class="breadcrumb-small">
+            <a href="#">Trang chủ</a>
+            <span>/</span>
+            <a href="#">Dịch vụ kỹ thuật</a>
+            <span>/</span>
+            <a href="#">Bộ tưới cây nhỏ giọt GF KIT 12 - Hàng Ý</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-product-order">
+      <div class="container">
+        <div class="product-single">
+          <div class="product-single-photo">
+            <div class="photo-wrap">
+              <div class="photo-viewport" id="photo-viewport">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="dummy/product/cart/01.jpg">
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="dummy/product/cart/02.jpg">
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="dummy/product/cart/03.jpg">
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="dummy/product/cart/04.jpg">
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="dummy/product/cart/10.jpg">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="splide photo-controls">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="dummy/product/cart/01.jpg">
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="dummy/product/cart/02.jpg">
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="dummy/product/cart/03.jpg">
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="dummy/product/cart/04.jpg">
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="splide__slide__container">
+                        <img src="dummy/product/cart/10.jpg">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-single-content">
+            <div class="product-header">
+              <h1 class="product-title">Bộ tưới cây nhỏ giọt GF KIT 12 - Hàng Ý</h1>
+            </div>
+            <div class="product-body">
+              <div class="product-body-wrap">
+                <div class="product-info">
+                  <div class="product-price">
+                    <span>570,000 ₫</span>
+                  </div>
+                  <div class="product-desc">
+                    <p>
+                      - Số lượng đầu tưới: 12 đầu <br>
+                      - Lưu lượng nước tưới: Từ 0 - 8 lít/giờ. <br>
+                      - Áp lực nước tưới: 1,5 Bar. <br>
+                      - Đường kính ống kết nối: 4 - 6mm <br>
+                      - Chiều dài dây: 20 mét <br>
+                      - Chất liệu: Nhựa cao cấp
+                    </p>
+                  </div>
+                </div>
+                <div class="product-policy">
+                  <button class="btn-policy"><i class="fa fa-credit-card" aria-hidden="true"></i><span>Tư vấn tận tâm nhiệt tình</span>
+                  </button>
+                  <button class="btn-policy"><i class="fa fa-truck"
+                                                aria-hidden="true"></i><span>Giao hàng tận nơi</span></button>
+                  <button class="btn-policy"><i class="fa fa-life-ring" aria-hidden="true"></i><span>Khảo sát lắp đặt nhanh</span>
+                  </button>
+                  <button class="btn-policy"><i class="fas fa-redo"></i><span>Hỗ trợ và bảo hành tận nơi</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-size-hotline">
+                <span class="product-hotline"><i class="fa fa-phone" aria-hidden="true"></i> Hotline hỗ trợ:  </span>
+                <a href="#">0902 719 168 - 0963 384 379</a>
+              </div>
+              <div class="product-order">
+                <p class="product-order-title">Số lượng</p>
+                <div class="product-order-wrap">
+                  <div class="product-quantity">
+                    <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-number"
+                                                data-type="minus" data-field="">
+                                          <i class="fas fa-minus"></i>
+                                        </button>
+                                    </span>
+                      <input type="text" id="quantity" name="quantity" class="form-control input-number quantity"
+                             value="10"
+                             min="1" max="100">
+                      <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-number"
+                                                data-type="plus" data-field="">
+                                           <i class="fas fa-plus"></i>
+                                        </button>
+                                    </span>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary"><i class="fa fa-shopping-cart"></i></button>
+                  <button class="btn btn-primary">MUA NGAY</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-product-detail">
+      <div class="container">
+        <div class="main-content">
+          <div class="content">
+            <div class="product-detail-header">
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <button type="button" class="btn active" data-toggle="tab" href="#desc">Mô tả sản phẩm</button>
+                </li>
+                <li>
+                  <button type="button" class="btn" data-toggle="tab" href="#comment">Bình luận</button>
+                </li>
+              </ul>
+            </div>
+            <div class="product-detail-body">
+
+              <div class="tab-content">
+                <div id="desc" class="tab-pane fade in active show">
+                  <p><img src="//file.hstatic.net/1000120140/file/chinh-sach-maka-2018-x2.jpg"
+                          style="display: block; margin-left: auto; margin-right: auto;"
+                          data-mce-src="//file.hstatic.net/1000120140/file/chinh-sach-maka-2018-x2.jpg"
+                          data-mce-style="display: block; margin-left: auto; margin-right: auto;"></p>
+                  <p>Bộ tưới cây nhỏ giọt GF KIT 12 được nhập khẩu từ Ý, cách lắp đặt và sử dụng đơn giản, độ bền cao
+                    nên được rất nhiều gia đình ưa thích sử dụng.</p>
+                  <p>Bộ tưới này rất thích hợp để ứng dụng tưới cho những chậu cây, khay rau mầm… trồng ở ban công, sân
+                    thượng hoặc tưới các bồn hoa nhỏ trong khuôn viên sân vườn…</p>
+                  <p style="text-align: center;" data-mce-style="text-align: center;"><span style="font-size: 15pt;"
+                                                                                            data-mce-style="font-size: 15pt;"><strong>Sơ đồ lắp đặt của bộ tưới nhỏ giọt GF KIT 12</strong></span>
+                  </p>
+                  <p><img
+                    src="https://file.hstatic.net/1000120140/file/so-do-cua-bo-tuoi-nho-giot-gf-kit-12_d9c1d81224224aee85d5fc559f96dd6f.jpg"
+                    alt="So do bo tuoi cay nho giot gf kit 12"
+                    style="display: block; margin-left: auto; margin-right: auto;"
+                    data-mce-src="https://file.hstatic.net/1000120140/file/so-do-cua-bo-tuoi-nho-giot-gf-kit-12_d9c1d81224224aee85d5fc559f96dd6f.jpg"
+                    data-mce-style="display: block; margin-left: auto; margin-right: auto;"></p>
+                  <h2><strong>Ưu điểm nổi bật của bộ tưới cây nhỏ giọt GF KIT 12</strong></h2>
+                  <p><a data-mce-href="https://maka.vn/collections/bo-tuoi-cay-nho-giot"
+                        href="https://maka.vn/collections/bo-tuoi-cay-nho-giot" target="_blank"
+                        rel="noopener noreferrer">Bộ tưới cây nhỏ giọt</a> GF KIT 12 có thể tưới tối đa 12 chậu cây
+                    trong cùng một thời điểm.</p>
+                  <p>Có thể điều chỉnh được lưu lượng nước của mỗi đầu tưới (bằng cách vặn đầu màu cam theo cùng chiều
+                    hoặc ngược chiều kim đồng hồ). Đây là một ưu điểm lớn của bộ tưới nhỏ giọt GF KIT 12, giúp bạn dễ
+                    dàng điều chỉnh lưu lượng nước cho phù hợp với nhu cầu nước tưới của từng chậu cây.</p>
+                  <p><img
+                    src="https://file.hstatic.net/1000120140/file/dau-tuoi-cua-bo-gf-kit-12-dang-hoat-dong_c0ae45b27a0b4e64bc282fb79abbe2e8.jpg"
+                    alt="Bo tuoi cay nho giot gf kit 12" style="display: block; margin-left: auto; margin-right: auto;"
+                    data-mce-src="https://file.hstatic.net/1000120140/file/dau-tuoi-cua-bo-gf-kit-12-dang-hoat-dong_c0ae45b27a0b4e64bc282fb79abbe2e8.jpg"
+                    data-mce-style="display: block; margin-left: auto; margin-right: auto;"></p>
+                  <p>Khi hoạt động, các đầu tưới sẽ nhỏ từng giọt nước đến chính xác vị trí gốc cây cần tưới mà không
+                    làm nước văng tung tóe ra những khu vực xung quanh, giúp tiết kiệm nước tối đa.</p>
+                  <p>Các đầu tưới được đi kèm với chân cắm, giúp bạn dễ dàng cố định vị trí của đầu tưới ở những nơi mà
+                    bạn mong muốn.</p>
+                  <p><img
+                    src="https://file.hstatic.net/1000120140/file/dau-tuoi-cua-bo-gf-kit-12-trong-vuon-rau_41f8836860794001a3f83f44a5a12bcf.jpg"
+                    style="display: block; margin-left: auto; margin-right: auto;"
+                    data-mce-src="https://file.hstatic.net/1000120140/file/dau-tuoi-cua-bo-gf-kit-12-trong-vuon-rau_41f8836860794001a3f83f44a5a12bcf.jpg"
+                    data-mce-style="display: block; margin-left: auto; margin-right: auto;"></p>
+                  <p>Bộ tưới nhỏ giọt<a data-mce-href="https://maka.vn/collections/bo-tuoi-cay-nho-giot"
+                                        href="https://maka.vn/collections/bo-tuoi-cay-nho-giot" target="_blank"
+                                        rel="noopener noreferrer"></a> được thiết kế bằng chất liệu nhựa cao cấp nên các
+                    thành phần trong bộ tưới có độ bền rất cao, sử dụng lâu bền trong mọi điều kiện môi trường thời
+                    tiết.</p>
+                  <p>Cách lắp đặt và sử dụng rất dễ dàng. Bạn có thể mua về và tự tay thiết kế thành 1 hệ thống tưới cho
+                    cây. Khi không có nhu cầu sử dụng nữa thì bạn dễ dàng tháo ra để cất giữ bảo quản.</p>
+                  <p>Ngoài ra, bạn có thể kết hợp thêm <a
+                    data-mce-href="https://maka.vn/collections/bo-hen-gio-tuoi-cay"
+                    href="https://maka.vn/collections/bo-hen-gio-tuoi-cay" target="_blank" rel="noopener noreferrer">Bộ
+                    Hẹn Giờ Tưới Cây</a>&nbsp;tự động vào bộ tưới Kit 12 để cài đặt thời gian tưới tự động cho cây theo
+                    ý muốn mà không cần phải dùng tay đóng mở vòi nước mỗi ngày.<br></p>
+                  <p><strong>Tham khảo thêm:</strong><br> ►&nbsp;<a
+                    href="https://maka.vn/blogs/giai-phap-tuoi-tu-dong/tuoi-tu-dong-cho-ban-cong-chung-cu-nha-o"
+                    target="_blank" rel="noopener noreferrer"
+                    data-mce-href="https://maka.vn/blogs/giai-phap-tuoi-tu-dong/tuoi-tu-dong-cho-ban-cong-chung-cu-nha-o">Giải
+                    pháp tưới tự động cho ban công chung cư</a><br> ► <a
+                    href="https://maka.vn/blogs/giai-phap-tuoi-tu-dong/he-thong-tuoi-cay-thong-minh" target="_blank"
+                    rel="noopener noreferrer"
+                    data-mce-href="https://maka.vn/blogs/giai-phap-tuoi-tu-dong/he-thong-tuoi-cay-thong-minh">Hệ thống
+                    tưới cây thông minh - Giải pháp tưới cây được yêu thích nhất</a></p>
+                  <h2><strong>Những thành phần của bộ tưới GF KIT 12</strong></h2>
+                  <p>Dưới đây là các thành phần có trong bộ tưới nhỏ giọt GF KIT 12:</p>
+                  <p><img
+                    src="https://file.hstatic.net/1000120140/file/cac-thanh-phan-trong-bo-tuoi-cay-nho-giot-gf-kit-23_fe2f2093e03145bd832852ce1ec664da.jpg"
+                    style="display: block; margin-left: auto; margin-right: auto;"
+                    data-mce-src="https://file.hstatic.net/1000120140/file/cac-thanh-phan-trong-bo-tuoi-cay-nho-giot-gf-kit-23_fe2f2093e03145bd832852ce1ec664da.jpg"
+                    data-mce-style="display: block; margin-left: auto; margin-right: auto;"></p>
+                  <p style="text-align: center;" data-mce-style="text-align: center;"><em>Những thành phần trong bộ tưới
+                    GF KIT 12</em></p>
+                  <p><strong>Trong đó:</strong></p>
+                  <p>- Dây dẫn nước 4mm: 20 mét.<br>- Đầu tưới nhỏ giọt In Line: 10 đầu.<br>- Đầu tưới nhỏ giọt End
+                    Line: 2 đầu.<br>- Chân cắm đầu tưới: 12 cái.<br>- Đầu nối ống T 4mm: 4 cái.<br>- Đầu nối ống L 4mm:
+                    4 cái.<br>- Chốt bít ống 4mm: 2 cái.<br>- Đầu giảm áp: 1 cái (đầu vào ren trong 27 và đầu ra ren
+                    ngoài 27).<br>- Đầu chuyển đổi: 1 cái (đầu vào ren trong 27 và đầu ra ống 16mm hoặc 4mm).</p>
+                  <h2><strong>Hướng dẫn lắp đặt bộ tưới GF KIT 12</strong></h2>
+                  <center><span contenteditable="false" data-mce-object="iframe"
+                                class="mce-preview-object mce-object-iframe"
+                                data-mce-p-allowfullscreen="allowfullscreen"
+                                data-mce-p-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                data-mce-p-frameborder="0" data-mce-p-src="https://www.youtube.com/embed/EYm6p4wN79g"><iframe
+                    src="https://www.youtube.com/embed/EYm6p4wN79g" allowfullscreen="allowfullscreen" width="800"
+                    height="450" frameborder="0" data-mce-src="https://www.youtube.com/embed/EYm6p4wN79g"></iframe><span
+                    class="mce-shim"></span></span></center>
+                  <p>&nbsp;</p>
+                  <h3><strong>Thông số kỹ thuật</strong></h3>
+                  <p>- Số lượng đầu tưới: 12 đầu<br>- Lưu lượng nước tưới: Từ 0 - 8 lít/giờ.<br>- Áp lực nước tưới: 1,5
+                    Bar.<br>-&nbsp;Đường kính ống kết nối: 4 - 6mm<br>- Chiều dài dây: 20 mét<br>- Chất liệu: Nhựa cao
+                    cấp</p>
+                  <h3><strong>Chính sách sản phẩm</strong></h3>
+                  <p>- Thương hiệu: GF - Ý<br>- Giao hàng và thanh toán tận nơi<br>- Tư vấn và hỗ trợ tận tình</p>
+                  <p>Bộ tưới cây nhỏ giọt GF KIT 12 sẽ là một giải pháp tiện lợi và tiết kiệm, giúp việc chăm sóc cây
+                    của bạn trở nên dễ dàng hơn.</p>
+                  <p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">Hãy&nbsp;gọi ngay đến <span
+                    style="color: #ff6600;" data-mce-style="color: #ff6600;">Hotline 0902 719 168</span> để Maka tư vấn thêm cho bạn nhé!</span>
+                  </p>
+                  <p><br></p>
+                  <p style="text-align: center;" data-mce-style="text-align: center;"><span
+                    style="color: #339966; font-size: 15pt;"
+                    data-mce-style="color: #339966; font-size: 15pt;"><strong><a
+                    style="color: #339966; font-size: 15pt;" href="https://maka.vn" target="_blank"
+                    rel="noopener noreferrer" text-decoration:="" none="" data-mce-href="https://maka.vn"
+                    data-mce-style="color: #339966; font-size: 15pt;">TƯỚI CÂY TỰ ĐỘNG</a> <span
+                    style="font-size: 15pt; color: #339966;"
+                    data-mce-style="font-size: 15pt; color: #339966;">MAKA</span></strong></span><br></p>
+                </div>
+                <div id="comment" class="tab-pane fade">
+                  <div class="manga-comment-wrap facebook-comment">
+                    <div class="fb-comments w-100"
+                         data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+                         data-numposts="5" data-width="100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="aside">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer" id="footer">
+  </footer>
+</div>
+<div id="fb-root"></div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<!-- Core JavaScript -->
+<!--<script src="dist/core.min.js"></script>-->
+<script src="third_party/modernizr.min.js"></script>
+<script src="third_party/slick/slick/slick.js"></script>
+<script src="third_party/lazyload/lazyload.min.js.map"></script>
+<script src="third_party/splide-master/dist/js/splide.min.js"></script>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=2759734777485686&autoLogAppEvents=1"
+        nonce="bAlDkWl7"></script>
+<!-- End Core JavaScript -->
+
+<!-- JavaScript -->
+<!--<script src="dist/app.min.js"></script>-->
+<script src="js/common.js"></script>
+<script src="customs/script.js"></script>
+<script>
+  var secondarySlider = new Splide('.photo-controls', {
+    rewind: true,
+    fixedWidth: 100,
+    fixedHeight: 64,
+    isNavigation: true,
+    gap: 4,
+    pagination: false,
+    cover: true
+
+  }).mount()
+  // Create the main slider.
+  var primarySlider = new Splide('#photo-viewport', {
+    type: 'fade',
+    pagination: false,
+    arrows: false,
+    cover: false
+  })
+  primarySlider.sync(secondarySlider).mount()
+
+</script>
+<!-- End JavaScript -->
+<!-- End JavaScript -->
+</body>
+</html>

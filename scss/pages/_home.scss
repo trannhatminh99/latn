@@ -81,6 +81,7 @@
       color: $primary;
       text-align: center;
       @include font-size(18px);
+      font-weight: 700;
     }
 
     .info-content {
@@ -90,8 +91,37 @@
         line-height: 18px;
         margin-bottom: 12px;
       }
+      span {
+        font-weight: 700;
+      }
       ul {
-        padding-left: 18px;
+        list-style: none;
+        padding-left: 30px;
+        .red {
+          span {
+            color: red;
+          }
+        }
+        .orange {
+          span {
+            color: #ff8c00;
+          }
+        }
+        .blue {
+          span {
+            color: $primary;
+          }
+        }
+        li {
+          position: relative;
+          &:after {
+            font-family: "Font Awesome 5 Free";
+            content: '\f0a4';
+            position: absolute;
+            top: 0;
+            left: -24px;
+          }
+        }
       }
     }
 

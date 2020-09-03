@@ -11425,6 +11425,7 @@ Footer
   color: #6bb42f;
   text-align: center;
   font-size: 1.125rem;
+  font-weight: 700;
 }
 
 .section-about .about-wrap .info-content p {
@@ -11434,8 +11435,37 @@ Footer
   margin-bottom: 12px;
 }
 
+.section-about .about-wrap .info-content span {
+  font-weight: 700;
+}
+
 .section-about .about-wrap .info-content ul {
-  padding-left: 18px;
+  list-style: none;
+  padding-left: 30px;
+}
+
+.section-about .about-wrap .info-content ul .red span {
+  color: red;
+}
+
+.section-about .about-wrap .info-content ul .orange span {
+  color: #ff8c00;
+}
+
+.section-about .about-wrap .info-content ul .blue span {
+  color: #6bb42f;
+}
+
+.section-about .about-wrap .info-content ul li {
+  position: relative;
+}
+
+.section-about .about-wrap .info-content ul li:after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0a4';
+  position: absolute;
+  top: 0;
+  left: -24px;
 }
 
 @media (min-width: 992px) {
@@ -12373,15 +12403,22 @@ Footer
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
 }
 
 .section-products .box-header .box-desc {
   margin: 0 auto;
-  line-height: 18px;
+  line-height: 24px;
   text-align: center;
+  margin-bottom: 6px;
   font-size: 1.125rem;
   font-weight: 400;
+}
+
+.section-products .box-header .box-desc a {
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
@@ -12395,12 +12432,33 @@ Footer
 }
 
 .section-products .box-content .card .card-img {
-  width: 93%;
+  width: 100%;
   height: 200px;
-  object-fit: cover;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.section-products .box-content .card .card-img img {
+  max-width: 92%;
+  max-height: 92%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .section-products .box-content .card .card-title {

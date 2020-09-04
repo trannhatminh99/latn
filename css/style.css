@@ -11130,6 +11130,152 @@ a.text-dark:hover, a.text-dark:focus {
   right: 0;
 }
 
+.card-list .card {
+  padding: 10px;
+  border: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.card-list .card + .card {
+  border-top: 1px dashed #ddd;
+}
+
+.card-list .card .card-img {
+  width: 100px;
+}
+
+.card-list .card .card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.card-list .card .card-body {
+  margin-left: 6px;
+  padding: 0;
+}
+
+.card-list .card .card-body .card-title {
+  font-size: 1rem;
+}
+
+.card-list .card .card-body .card-title a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+}
+
+.card-list .card .card-body .card-title:hover a, .card-list .card .card-body .card-title:focus a, .card-list .card .card-body .card-title:active a {
+  color: #6bb42f;
+}
+
+.card-list .card .card-body .card-price {
+  display: none;
+}
+
+.aside-menu.aside-menu-product {
+  border: 1px solid #dee2e6;
+  border-top: 2px solid #6bb42f;
+}
+
+.aside-menu.aside-menu-product .aside-menu-title {
+  background-color: transparent;
+}
+
+.aside-menu.aside-menu-product .aside-menu-title span {
+  color: #6bb42f;
+  margin-left: -40px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #6bb42f;
+}
+
+.aside-menu.aside-menu-product .aside-menu-content {
+  border: 0;
+}
+
+.aside-menu.aside-menu-product .card .card-body .card-title {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.aside-menu.aside-menu-product .card .card-body .card-price {
+  display: block;
+}
+
+.aside-menu.aside-menu-product .card .card-body .card-price .current-price {
+  font-size: 0.875rem;
+  color: #6bb42f;
+}
+
+.aside-menu.aside-menu-product .card .card-body .card-price .original-price {
+  display: none;
+}
+
+.block-news .col-12:first-child .card {
+  border-top: 0;
+}
+
+@media (min-width: 768px) {
+  .block-news .col-12:nth-child(2) .card {
+    border-top: 0;
+  }
+}
+
+.block-news .card {
+  border: 0;
+  border-top: 1px solid #d8d8d8;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.block-news .card .card-img {
+  width: 150px;
+}
+
+.block-news .card .card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.block-news .card .card-body {
+  padding-left: 6px;
+  padding-top: 4px;
+}
+
+.block-news .card .card-body .card-title {
+  margin-bottom: 0;
+}
+
+.block-news .card .card-body .card-title a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000;
+}
+
+.block-news .card .card-body .card-desc, .block-news .card .card-body .card-author {
+  display: none;
+}
+
 /* ==========================================================================
 Header
 ========================================================================== */
@@ -12394,6 +12540,19 @@ Footer
   position: absolute;
 }
 
+.box-title {
+  border-top: 2px solid #6bb42f;
+  background: #f2f2f2;
+  padding: 14px 18px;
+}
+
+.box-title .box-text {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  color: #6bb42f;
+  font-weight: 700;
+}
+
 .section-products {
   padding-bottom: 24px;
   padding-top: 24px;
@@ -12562,46 +12721,6 @@ Footer
 
 .section-cate .box-content {
   margin-top: 12px;
-}
-
-.section-cate .box-content .card {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 0;
-}
-
-.section-cate .box-content .card .card-img {
-  width: 100%;
-}
-
-.section-cate .box-content .card .card-img img {
-  width: 100%;
-  height: auto;
-}
-
-.section-cate .box-content .card .card-body {
-  padding: 0;
-}
-
-.section-cate .box-content .card .card-body .card-title {
-  margin-top: 8px;
-  margin-bottom: 6px;
-}
-
-.section-cate .box-content .card .card-body .card-title:hover a, .section-cate .box-content .card .card-body .card-title:focus a, .section-cate .box-content .card .card-body .card-title:active a {
-  color: #6bb42f;
-}
-
-.section-cate .box-content .card .card-body .card-title a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.section-cate .box-content .card .card-body .card-desc {
-  margin-top: 4px;
-  line-height: 18px;
-  font-size: 0.875rem;
-  font-weight: 300;
 }
 
 .aside-menu .aside-menu-title {

@@ -52,45 +52,45 @@
   }
   .box-content {
     margin-top: 12px;
-    .card {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      border: 0;
-      .card-img {
-        //a {
-        //  display: block;
-        //  position: relative;
-        //}
-        img {
-          width: 100%;
-          height: auto;
-        }
-        width: 100%;
-      }
-      .card-body {
-        padding: 0;
-        .card-title {
-          margin-top: 8px;
-          margin-bottom: 6px;
-          @include hover-focus-active {
-            a {
-              color: $primary;
-            }
-          }
-          a {
-            color: #000000;
-            text-decoration: none;
-          }
-        }
-        .card-desc {
-          margin-top: 4px;
-          line-height: 18px;
-          @include font-size(14px);
-          font-weight: 300;
-        }
-      }
-
-    }
+    //.card {
+    //  margin-top: 10px;
+    //  margin-bottom: 10px;
+    //  border: 0;
+    //  .card-img {
+    //    //a {
+    //    //  display: block;
+    //    //  position: relative;
+    //    //}
+    //    img {
+    //      width: 100%;
+    //      height: auto;
+    //    }
+    //    width: 100%;
+    //  }
+    //  .card-body {
+    //    padding: 0;
+    //    .card-title {
+    //      margin-top: 8px;
+    //      margin-bottom: 6px;
+    //      @include hover-focus-active {
+    //        a {
+    //          color: $primary;
+    //        }
+    //      }
+    //      a {
+    //        color: #000000;
+    //        text-decoration: none;
+    //      }
+    //    }
+    //    .card-desc {
+    //      margin-top: 4px;
+    //      line-height: 18px;
+    //      @include font-size(14px);
+    //      font-weight: 300;
+    //    }
+    //  }
+    //
+    //}
   }
 }
 

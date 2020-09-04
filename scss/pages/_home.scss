@@ -86,9 +86,9 @@
 
     .info-content {
       p {
-        @include font-size(14px);
+        @include font-size(20px);
         font-weight: 600;
-        line-height: 18px;
+        line-height: 25px;
         margin-bottom: 12px;
       }
       span {
@@ -113,6 +113,10 @@
           }
         }
         li {
+          &+li {
+            margin-top: 6px;
+          }
+          @include font-size(18px);
           position: relative;
           &:after {
             font-family: "Font Awesome 5 Free";
@@ -136,12 +140,12 @@
         @include flex(1);
 
         .info {
-          padding: 20px;
+          padding: 30px;
           border: 3px solid $border-color;
         }
 
         .info-wrap {
-          padding: 20px;
+          padding: 30px;
           border: 2px solid $border-color;
         }
       }

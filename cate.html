@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Frontend Seed 4</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="canonical" href="http://">
+  <meta name="title" content="Frontend Seed 4 - Title">
+  <meta name="referrer" content="unsafe-url">
+  <meta name="description" content="Frontend Seed 4 - Description">
+
+  <meta property="fb:app_id" content="your_app_id">
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="article:publisher" content="">
+  <meta property="article:section" content="Article">
+  <meta property="article:published_time" content="">
+  <meta property="article:modified_time" content="">
+  <meta property="og:updated_time" content="">
+  <meta property="og:image" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:creator" content="">
+  <!-- App CSS -->
+  <style>
+    :root {
+      --theme-color: #007bff;
+      --bg-color: #ffffff;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    .app-loading {
+      background: var(--bg-color);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes bouncing-loader {
+      to {
+        opacity: 0.1;
+        transform: translate3d(0, -1rem, 0);
+      }
+    }
+
+    .app-loading .bouncing-loader {
+      display: flex;
+      justify-content: center;
+    }
+
+    .app-loading .bouncing-loader > div {
+      width: 1rem;
+      height: 1rem;
+      margin: 3rem 0.2rem;
+      background: var(--theme-color);
+      border-radius: 50%;
+      animation: bouncing-loader 0.6s infinite alternate;
+    }
+
+    .app-loading .bouncing-loader > div:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .app-loading .bouncing-loader > div:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+  </style>
+  <link rel='preload' href='dist/app.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="dist/app.min.css">
+  </noscript>
+  <!--  <link rel="stylesheet" href="css/style.css">-->
+  <link rel="stylesheet" href="customs/style.css">
+</head>
+
+<body>
+<div class="app-loading">
+  <div class="bouncing-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<div class="wrapper" id="site_wrapper">
+  <header class="header" id="header">
+    <div class="header-top">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="tel:0918093975"><i class="fas fa-phone"></i><span>0918093975</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:daivuongsaigon@gmail.com"><i class="far fa-envelope-open"></i><span>daivuongsaigon@gmail.com</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i
+              class="far fa-clock"></i><span>Mở cửa : Từ 8h30 - 17h30</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button class="btn btn-primary">Mua hàng ngay</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-navbar">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo" alt=""></a>
+          <button class="btn navbar-toggler-sidebar js-toggleAside d-lg-none" type="button">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="tech.html">
+                  Dịch vụ kỹ thuật
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a>
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                    công nghiệp</a>
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế và thi công điện công trình dân dụng và công
+                    nghiệp</a>
+                  <a class="dropdown-item" href="#">Thi công, bảo trì các công trình viễn thông</a>
+                  <a class="dropdown-item" href="#">Nghiên cứu, thiết kế và thi công các hệ thống IoT</a>
+                  <a class="dropdown-item" href="#">Thiết kế website </a>
+                  <a class="dropdown-item" href="#">Gia công phần mềm</a>
+                </div>
+              </li>
+              <li class="nav-item active dropdown">
+                <a class="nav-link dropdown-toggle" href="health.html">
+                  Dịch vụ sức khỏe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Giới thiệu</a>
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế, thi công các phòng tập thể dục</a>
+                  <a class="dropdown-item" href="#">Bảo trì, sửa chữa các thiết bị phòng tập thể dục</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="edu.html">
+                  Dịch vụ đào tạo
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Đào tạo nguồn nhân lực</a>
+                  <a class="dropdown-item" href="#">Cung ứng nguồn nhân lực</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <div class="dropdown dropdown-user">
+                <buttun class="btn" type="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><i class="fas fa-search"></i></buttun>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownSearch">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username"
+                           aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><i class="fas fa-user"></i></button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownUser">
+                  <a class="dropdown-item" href="#">Đăng nhập</a>
+                  <a class="dropdown-item" href="#">Đăng ký</a>
+                </div>
+              </div>
+              <button class="btn" type="button"><i class="fas fa-cart-plus"></i></button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main" id="main">
+    <div class="main-menu">
+      <button class="btn btn-close js-close-toggleAside" type="button">ĐÓNG <i class="fas fa-times"></i></button>
+      <form class="input-group input-search">
+        <input type="text" class="form-control" placeholder="Nhập từ khoá" aria-label="Text input with dropdown button">
+        <div class="input-group-append">
+          <button class="btn" type="button"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+      <ul class="main-aside-nav">
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fa fa-home"></i>
+            <span>Trang chủ</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="far fa-comment"></i>
+            <span>Giới thiệu</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item-has-sub">
+          <a class="nav-link" data-toggle="collapse" href="#collapserTech" role="button" aria-expanded="false"
+             aria-controls="collapserProduct">
+            <i class="fas fa-microchip"></i>
+            <span>Dịch vụ kỹ thuật</span>
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+          </a>
+          <div class="collapse" id="collapserTech">
+            <ul class="main-aside-navsub">
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a></li>
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                công nghiệp</a></li>
+              <li><a class="nav-link" href="#">Đồng hồ đo nhiệt độ</a></li>
+              <li><a class="nav-link" href="#">THIẾT BỊ PHÂN TÍCH NƯỚC</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item nav-item-has-sub">
+          <a class="nav-link" data-toggle="collapse" href="#collapserHealth" role="button" aria-expanded="false"
+             aria-controls="collapserProduct">
+            <i class="fas fa-heartbeat"></i>
+            <span>Dịch vụ sức khỏe</span>
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+          </a>
+          <div class="collapse" id="collapserHealth">
+            <ul class="main-aside-navsub">
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a></li>
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                công nghiệp</a></li>
+              <li><a class="nav-link" href="#">Đồng hồ đo nhiệt độ</a></li>
+              <li><a class="nav-link" href="#">THIẾT BỊ PHÂN TÍCH NƯỚC</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item nav-item-has-sub">
+          <a class="nav-link" data-toggle="collapse" href="#collapserEdu" role="button" aria-expanded="false"
+             aria-controls="collapserProduct">
+            <i class="fas fa-shapes"></i>
+            <span>Dịch vụ đào tạo</span>
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
+          </a>
+          <div class="collapse" id="collapserEdu">
+            <ul class="main-aside-navsub">
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a></li>
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                công nghiệp</a></li>
+              <li><a class="nav-link" href="#">Đồng hồ đo nhiệt độ</a></li>
+              <li><a class="nav-link" href="#">THIẾT BỊ PHÂN TÍCH NƯỚC</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="far fa-envelope"></i>
+            <span>Liên hệ </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="section section-cate section-cate-product">
+      <div class="container">
+        <div class="main-content">
+          <div class="aside">
+            <div class="aside-menu">
+              <div class="aside-menu-title">
+                <div class="aside-menu-title-icon">
+                  <i class="fas fa-list"></i>
+                </div>
+                <div class="aside-menu-title-text">
+                  <span>Danh mục sản phẩm</span>
+                </div>
+              </div>
+              <div class="aside-menu-content">
+                <ul class="aside-menu-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span>Tư vấn, thiết kế và thi công điện năng lượng mặt trời </span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span>Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và công nghiệp </span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span>Tư vấn, thiết kế và thi công điện công trình dân dụng và công nghiệp </span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span>Thi công, bảo trì các công trình viễn thông</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span>Nghiên cứu, thiết kế và thi công các hệ thống IoT</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span>Thiết kế website</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span>Gia công phần mềm</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="title-nav">
+              <div class="title-text">
+                <span>
+                  Dịch vụ sức khoẻ
+                </span>
+              </div>
+            </div>
+            <div class="box-content">
+              <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="#"><img data-src="./dummy/product/1.png"
+                                       class="lazy"></a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời</a></h5>
+                      <div class="card-price">
+<!--                        <span class="current-price">580,000 ₫</span>-->
+<!--                        <div class="original-price"><s>2,500,000 ₫</s></div>-->
+                        <button class="btn btn-primary ml-auto mr-auto">Liên hệ</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="#"><img data-src="./dummy/product/1.png"
+                                       class="lazy"></a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời</a></h5>
+                      <div class="card-price">
+                        <span class="current-price">580,000 ₫</span>
+                        <div class="original-price"><s>2,500,000 ₫</s></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="#"><img data-src="./dummy/product/1.png"
+                                       class="lazy"></a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời</a></h5>
+                      <div class="card-price">
+                        <span class="current-price">580,000 ₫</span>
+                        <div class="original-price"><s>2,500,000 ₫</s></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="#"><img data-src="./dummy/product/1.png"
+                                       class="lazy"></a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời</a></h5>
+                      <div class="card-price">
+                        <!--                        <span class="current-price">580,000 ₫</span>-->
+                        <!--                        <div class="original-price"><s>2,500,000 ₫</s></div>-->
+                        <button class="btn btn-primary ml-auto mr-auto">Liên hệ</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="#"><img data-src="./dummy/product/1.png"
+                                       class="lazy"></a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời</a></h5>
+                      <div class="card-price">
+                        <span class="current-price">580,000 ₫</span>
+                        <div class="original-price"><s>2,500,000 ₫</s></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="#"><img data-src="./dummy/product/1.png"
+                                       class="lazy"></a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời</a></h5>
+                      <div class="card-price">
+                        <span class="current-price">580,000 ₫</span>
+                        <div class="original-price"><s>2,500,000 ₫</s></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer" id="footer">
+  </footer>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- Core JavaScript -->
+<!--<script src="dist/core.min.js"></script>-->
+<script src="third_party/modernizr.min.js"></script>
+<script src="third_party/slick/slick/slick.js"></script>
+<script src="third_party/lazyload/lazyload.min.js.map"></script>
+<!-- End Core JavaScript -->
+
+<!-- JavaScript -->
+<!--<script src="dist/app.min.js"></script>-->
+<script src="js/common.js"></script>
+<script src="customs/script.js"></script>
+<!-- End JavaScript -->
+</body>
+</html>

@@ -11225,6 +11225,30 @@ a.text-dark:hover, a.text-dark:focus {
   display: none;
 }
 
+.section .card .card-body .card-title.dich-vu-ky-thuat a, .section .card .card-body .card-price.dich-vu-ky-thuat a {
+  color: red;
+}
+
+.section .card .card-body .card-title.dich-vu-ky-thuat .current-price, .section .card .card-body .card-title.dich-vu-ky-thuat .original-price, .section .card .card-body .card-price.dich-vu-ky-thuat .current-price, .section .card .card-body .card-price.dich-vu-ky-thuat .original-price {
+  color: red;
+}
+
+.section .card .card-body .card-title.dich-vu-suc-khoe a, .section .card .card-body .card-price.dich-vu-suc-khoe a {
+  color: #6bb42f;
+}
+
+.section .card .card-body .card-title.dich-vu-suc-khoe .current-price, .section .card .card-body .card-title.dich-vu-suc-khoe .original-price, .section .card .card-body .card-price.dich-vu-suc-khoe .current-price, .section .card .card-body .card-price.dich-vu-suc-khoe .original-price {
+  color: #6bb42f;
+}
+
+.section .card .card-body .card-title.dich-vu-dao-tao a, .section .card .card-body .card-price.dich-vu-dao-tao a {
+  color: darkorange;
+}
+
+.section .card .card-body .card-title.dich-vu-dao-tao .current-price, .section .card .card-body .card-title.dich-vu-dao-tao .original-price, .section .card .card-body .card-price.dich-vu-dao-tao .current-price, .section .card .card-body .card-price.dich-vu-dao-tao .original-price {
+  color: darkorange;
+}
+
 .block-news .col-12:first-child .card {
   border-top: 0;
 }
@@ -12547,13 +12571,13 @@ Footer
   position: absolute;
 }
 
-.box-title {
+.section-cate .box-title {
   border-top: 2px solid #6bb42f;
   background: #f2f2f2;
   padding: 14px 18px;
 }
 
-.box-title .box-text {
+.section-cate .box-title .box-text {
   font-size: 1.25rem;
   margin-bottom: 0;
   color: #6bb42f;

@@ -1,49 +1,60 @@
 .card-list {
   .card {
-    &+.card {
+    & + .card {
       border-top: 1px dashed #ddd;
     }
+
     padding: 10px;
     border: 0;
     @include flexbox;
     @include flex-direction(row);
+
     .card-img {
       width: 100px;
+
       img {
         width: 100%;
         height: auto;
       }
     }
+
     .card-body {
       margin-left: 6px;
       padding: 0;
+
       .card-title {
         @include font-size(16px);
         max-height: 73px;
         overflow: hidden;
+
         a {
           text-decoration: none;
           color: #000000;
           font-weight: 400;
         }
+
         @include hover-focus-active {
           a {
             color: $primary;
           }
         }
       }
+
       .card-price {
         display: none;
       }
     }
   }
 }
+
 .aside-menu {
   &.aside-menu-product {
     border: 1px solid #dee2e6;
     border-top: 2px solid $primary;
+
     .aside-menu-title {
       background-color: transparent;
+
       span {
         color: $primary;
         margin-left: -40px;
@@ -51,9 +62,11 @@
         border-bottom: 2px solid $primary;
       }
     }
+
     .aside-menu-content {
       border: 0;
     }
+
     .card {
       .card-body {
         .card-title {
@@ -63,12 +76,15 @@
           overflow: hidden;
           text-overflow: clip;
         }
+
         .card-price {
           display: block;
+
           .current-price {
             @include font-size(14px);
             color: $primary;
           }
+
           .original-price {
             display: none;
           }
@@ -78,4 +94,50 @@
   }
 }
 
+.section {
+  .card {
+    .card-body {
+      .card-title,.card-price {
+        &.dich-vu-ky-thuat {
+          a {
+            color: red;
+          }
+          .current-price,.original-price {
+            color: red;
+          }
+        }
+      }
+    }
+  }
 
+  .card {
+    .card-body {
+      .card-title,.card-price {
+        &.dich-vu-suc-khoe {
+          a {
+            color: $primary;
+          }
+          .current-price,.original-price {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    .card-body {
+      .card-title,.card-price {
+        &.dich-vu-dao-tao {
+          a {
+            color: rgb(255, 140, 0);
+          }
+          .current-price,.original-price {
+            color: rgb(255, 140, 0);
+          }
+        }
+      }
+    }
+  }
+
+}

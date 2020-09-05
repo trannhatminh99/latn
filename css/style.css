@@ -11203,8 +11203,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .aside-menu.aside-menu-product .card .card-body .card-title {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   margin-bottom: 0;
+  max-height: 62px;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 .aside-menu.aside-menu-product .card .card-body .card-price {
@@ -11264,6 +11267,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .block-news .card .card-body .card-title {
   margin-bottom: 0;
+  max-height: 70px;
+  overflow: hidden;
 }
 
 .block-news .card .card-body .card-title a {

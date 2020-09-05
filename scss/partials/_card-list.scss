@@ -55,8 +55,11 @@
     .card {
       .card-body {
         .card-title {
-          @include font-size(14px);
+          @include font-size(13px);
           margin-bottom: 0;
+          max-height: 62px;
+          overflow: hidden;
+          text-overflow: clip;
         }
         .card-price {
           display: block;

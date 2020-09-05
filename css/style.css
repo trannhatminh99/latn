@@ -12881,4 +12881,10 @@ Footer
   justify-content: space-between;
 }
 
+.section-cate-product .box-content .card .card-body .card-title {
+  max-height: 73px;
+  overflow: hidden;
+  font-size: 1.25rem;
+}
+
 /*# sourceMappingURL=style.css.map */

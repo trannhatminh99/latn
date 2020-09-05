@@ -217,6 +217,11 @@
           @include flexbox;
           @include justify-content(space-between);
         }
+        .card-title {
+          max-height: 73px;
+          overflow: hidden;
+          @include font-size(20px);
+        }
       }
     }
   }

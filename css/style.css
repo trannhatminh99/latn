@@ -11259,7 +11259,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: darkorange;
 }
 
-.section .card .card-body .card-title.dich-vu-dao-tao .current-price, .section .card .card-body .card-price.dich-vu-dao-tao .current-price {
+.section .card .card-body .card-title.dich-vu-dao-tao .btn-contact, .section .card .card-body .card-price.dich-vu-dao-tao .btn-contact {
   background: darkorange;
   color: #fff;
 }

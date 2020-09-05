@@ -11168,7 +11168,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 1rem;
   max-height: 73px;
   overflow: hidden;
-  line-height: 24px;
 }
 
 .card-list .card .card-body .card-title a {

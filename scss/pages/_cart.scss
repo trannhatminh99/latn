@@ -1,0 +1,138 @@
+.section-cart {
+  margin-top: 30px;
+
+  .block-title {
+    .block-text {
+      @include font-size(24px);
+      color: #000000;
+      padding: 0px 0px 15px 0px;
+      margin: 0px 0px 15px 0px;
+    }
+  }
+}
+
+
+
+.cart-desktop {
+  .cart-header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .cart-content {
+    .list-cart {
+      .item-cart {
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+    }
+  }
+
+  .cart-info {
+    @include flexbox;
+
+    .cart-img {
+      width: 200px;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .cart-body {
+      margin-left: 12px;
+      @include flexbox;
+      @include align-items(left);
+      @include flex-direction(column);
+
+      .cart-title {
+        @include font-size(20px);
+      }
+
+      .btn-delete {
+        .btn {
+        }
+      }
+    }
+  }
+
+
+
+  .cart-quantity {
+    .quantity {
+      text-align: center;
+    }
+  }
+
+
+}
+.cart-mobile {
+  .item-cart {
+    &+.item-cart {
+      margin-top: 12px;
+      border-top: 1px solid #e6e6e6;
+      padding-top: 12px;
+    }
+    .media-img {
+      width: 100px;
+      height: auto;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .media-body {
+      margin-left: 12px;
+      .media-title {
+        color: $primary;
+        @include font-size(16px);
+        font-weight: 700;
+      }
+      .media-price {
+        color: #000;
+        font-weight: 700;
+      }
+      .media-quantity {
+        width: 149px;
+      }
+    }
+  }
+}
+.cart-desktop {
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+}
+.cart-mobile {
+  display: block;
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+.cart-footer {
+  .footer-submit, .footer-info {
+    @include flexbox;
+    @include justify-content(center);
+  }
+
+  .footer-info {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    span {
+      @include font-size(20px);
+    }
+
+    .footer-price {
+      font-weight: 700;
+      margin-left: 6px;
+    }
+  }
+
+}
+

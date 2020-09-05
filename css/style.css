@@ -11233,7 +11233,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: red;
 }
 
-.section .card .card-body .card-title.dich-vu-ky-thuat .current-price, .section .card .card-body .card-price.dich-vu-ky-thuat .current-price {
+.section .card .card-body .card-title.dich-vu-ky-thuat .btn-contact, .section .card .card-body .card-price.dich-vu-ky-thuat .btn-contact {
   background: red;
   color: #fff;
 }
@@ -11246,7 +11246,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #6bb42f;
 }
 
-.section .card .card-body .card-title.dich-vu-suc-khoe .current-price, .section .card .card-body .card-price.dich-vu-suc-khoe .current-price {
+.section .card .card-body .card-title.dich-vu-suc-khoe .btn-contact, .section .card .card-body .card-price.dich-vu-suc-khoe .btn-contact {
   background: #6bb42f;
   color: #fff;
 }

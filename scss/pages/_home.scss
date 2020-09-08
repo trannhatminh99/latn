@@ -23,12 +23,13 @@
     @include center();
     text-align: center;
     color: $white;
-
+    top: 30%;
     .slider-text {
       @include font-size(20px);
       @include media-breakpoint-up(lg) {
         @include font-size(40px);
       }
+      text-transform: uppercase;
       font-weight: 600;
     }
 
@@ -282,7 +283,7 @@
   &:before {
     position: absolute;
     content: '';
-    background-color: rgba(theme-color('primary'), 0.5);
+    background-color: rgba(theme-color('primary'), 0.9);
     height: 100%;
     right: 0;
     top: 0;
@@ -318,19 +319,21 @@
 
   @include media-breakpoint-up(sm) {
     .core-value {
-      width: 45%;
+      width: 48%;
       margin-left: auto;
       margin-top: auto;
       margin-bottom: auto;
 
       .core-value-title {
         color: $white;
-        @include font-size(24px);
+        @include font-size(40px);
       }
 
       .core-value-list {
+        margin-top: 16px;
         li {
-          @include font-size(16px);
+          margin-top: 6px;
+          @include font-size(22px);
         }
       }
 

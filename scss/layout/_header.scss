@@ -5,7 +5,7 @@ Header
   display: none;
   @include media-breakpoint-up(lg) {
     @include flexbox;
-    background-color: $secondary;
+    background-color: $primary;
     .nav {
       @include justify-content(space-between);
     }
@@ -45,7 +45,7 @@ Header
     left: 0;
     z-index: $zindex-fixed;
   }
-  background-color: $secondary;
+  background-color: $primary;
 
   .logo {
     width: 100px;
@@ -53,7 +53,7 @@ Header
 
   @include media-breakpoint-up(lg) {
     background-color: transparent;
-    .bg-secondary {
+    .bg-primary {
       z-index: $zindex-fixed - 1;
       -moz-box-shadow: 0 0px 29px 0 rgba(0, 0, 0, 0.8);
       -webkit-box-shadow: 0 0px 29px 0 rgba(0, 0, 0, 0.8);
@@ -65,13 +65,13 @@ Header
     .nav-item {
       &.active {
         .nav-link {
-          color: $primary;
+          color: $white;
         }
       }
 
       @include hover-focus-active {
         .nav-link {
-          color: $primary;
+          color: $white;
         }
         .dropdown-menu {
           display: block;
@@ -142,7 +142,7 @@ Header
       right: 0;
       left: 0;
       top: 0;
-      background-color: #1f2839;
+      background-color: $primary;
       z-index: $zindex-fixed;
       position: fixed;
       padding-top: 16px;
@@ -150,7 +150,7 @@ Header
       -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
       box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
       .navbar {
-        &.bg-secondary {
+        &.bg-primary {
           background-color: transparent;
           -moz-box-shadow: 0 0px 0px 0 transparent;
           -webkit-box-shadow: 0 0px 0px 0 transparent;

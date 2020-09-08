@@ -12624,6 +12624,20 @@ Footer
   width: 150px;
 }
 
+.section-checkouts .checkout-price {
+  width: 100px;
+  text-align: right;
+}
+
+.section-checkouts .checkout-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
 .form-signin {
   width: 100%;
   max-width: 330px;

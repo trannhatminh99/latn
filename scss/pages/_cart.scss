@@ -12,3 +12,12 @@
     width: 150px;
   }
 }
+.section-checkouts {
+  .checkout-price {
+    width: 100px;
+    text-align: right;
+  }
+  .checkout-body {
+    @include flex(1);
+  }
+}

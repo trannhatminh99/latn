@@ -197,6 +197,8 @@
   }
   .box-content {
     .card {
+      margin-top: 12px;
+      margin-bottom: 12px;
       border: 1px solid $border-color;
       .card-img {
         width: 100%;
@@ -213,6 +215,8 @@
       }
       .card-body {
         margin: 12px;
+        margin-top: 0;
+        padding-top: 0;
         .card-price {
           @include flexbox;
           @include justify-content(space-between);
@@ -221,6 +225,16 @@
           max-height: 73px;
           overflow: hidden;
           @include font-size(20px);
+          @include hover {
+            a {
+              color: $primary;
+            }
+          }
+          a {
+            color: #000000;
+            text-decoration: none;
+
+          }
         }
       }
     }

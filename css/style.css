@@ -11229,14 +11229,15 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .section .card .card-body .card-title.dich-vu-ky-thuat a, .section .card .card-body .card-price.dich-vu-ky-thuat a {
-  color: #fff;
+  color: red;
 }
 
 .section .card .card-body .card-title.dich-vu-ky-thuat .current-price, .section .card .card-body .card-title.dich-vu-ky-thuat .original-price, .section .card .card-body .card-price.dich-vu-ky-thuat .current-price, .section .card .card-body .card-price.dich-vu-ky-thuat .original-price {
-  color: #fff;
+  color: red;
 }
 
 .section .card .card-body .card-title.dich-vu-ky-thuat .btn-contact, .section .card .card-body .card-price.dich-vu-ky-thuat .btn-contact {
+  margin-top: 6px;
   background: red;
   color: #fff;
 }

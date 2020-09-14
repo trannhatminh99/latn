@@ -101,12 +101,13 @@
       .card-title,.card-price {
         &.dich-vu-ky-thuat {
           a {
-            color: $white;
+            color: red;
           }
           .current-price,.original-price {
-            color: $white;
+            color: red;
           }
           .btn-contact {
+            margin-top: 6px;
             background: red;
             color: $white;
           }

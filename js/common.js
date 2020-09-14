@@ -84,10 +84,17 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
 
   function product_top() {
     $('.product-top').slick({
-      slidesToShow: 3,
+      slidesToShow: 4,
       autoplay: true,
       autoplaySpeed: 4000,
       responsive: [
+        {
+          breakpoint: 1220,
+          settings: {
+            dots: false,
+            slidesToShow: 3
+          }
+        },
         {
           breakpoint: 992,
           settings: {

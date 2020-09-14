@@ -220,6 +220,7 @@
         .card-price {
           @include flexbox;
           @include justify-content(space-between);
+          @include font-size(14px);
         }
         .card-title {
           max-height: 73px;

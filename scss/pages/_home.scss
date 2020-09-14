@@ -1,5 +1,5 @@
 .section-slider {
-  margin-top: -55px;
+  margin-top: -85px;
 
   .slider-list {
     .slick-slide {
@@ -11,9 +11,6 @@
 
       img {
         width: 100%;
-        @include media-breakpoint-up(lg) {
-          height: 900px;
-        }
         height: auto;
       }
     }
@@ -23,7 +20,7 @@
     @include center();
     text-align: center;
     color: $white;
-    top: 30%;
+    top: 45%;
     .slider-text {
       @include font-size(20px);
       @include media-breakpoint-up(lg) {

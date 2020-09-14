@@ -41,6 +41,7 @@
       }
 
       .card-price {
+        @include font-size(14px);
         display: none;
       }
     }
@@ -100,10 +101,10 @@
       .card-title,.card-price {
         &.dich-vu-ky-thuat {
           a {
-            color: red;
+            color: $white;
           }
           .current-price,.original-price {
-            color: red;
+            color: $white;
           }
           .btn-contact {
             background: red;

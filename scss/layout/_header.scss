@@ -11,6 +11,11 @@ Header
     }
     .nav-item {
       @include flexbox;
+      @include hover {
+        .nav-link {
+          color: $secondary;
+        }
+      }
 
       .nav-link {
         margin-top: auto;
@@ -48,7 +53,7 @@ Header
   background-color: $primary;
 
   .logo {
-    width: 100px;
+    width: 60px;
   }
 
   @include media-breakpoint-up(lg) {
@@ -65,7 +70,7 @@ Header
     .nav-item {
       &.active {
         .nav-link {
-          color: $white;
+          color: $secondary;
         }
       }
 
@@ -92,7 +97,7 @@ Header
       .btn {
         color: $white;
         @include hover-focus-active {
-          color: $primary;
+          color: $secondary;
         }
       }
 
@@ -149,6 +154,7 @@ Header
       -moz-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
       -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
       box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
+
       .navbar {
         &.bg-primary {
           background-color: transparent;

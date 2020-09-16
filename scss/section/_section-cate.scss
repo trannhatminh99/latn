@@ -180,6 +180,13 @@
 
 
 .section-cate-product {
+  .article-wrap {
+    height: 800px;
+    overflow: overlay;
+    .card-article {
+      display: block;
+    }
+  }
   .title-nav {
     border-bottom: 2px solid $primary;
     border-left: 10px solid $primary;

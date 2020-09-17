@@ -1,6 +1,6 @@
 .section-slider {
   margin-top: -85px;
-  .slider-item-tech {
+  .tech {
     .slider-text {
       color: red;
     }
@@ -11,7 +11,7 @@
     }
   }
 
-  .slider-item-heath {
+  .heath {
     .slider-text {
       color: $primary;
     }
@@ -21,7 +21,7 @@
       font-weight: 700;
     }
   }
-  .slider-item-edu {
+  .edu {
     .slider-text {
       color: $warning;
     }

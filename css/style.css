@@ -11697,31 +11697,31 @@ footer {
   margin-top: -85px;
 }
 
-.section-slider .slider-item-tech .slider-text {
+.section-slider .tech .slider-text {
   color: red;
 }
 
-.section-slider .slider-item-tech .btn {
+.section-slider .tech .btn {
   background-color: red;
   color: #fff;
   font-weight: 700;
 }
 
-.section-slider .slider-item-heath .slider-text {
+.section-slider .heath .slider-text {
   color: #6bb42f;
 }
 
-.section-slider .slider-item-heath .btn {
+.section-slider .heath .btn {
   background-color: #6bb42f;
   color: #fff;
   font-weight: 700;
 }
 
-.section-slider .slider-item-edu .slider-text {
+.section-slider .edu .slider-text {
   color: #ff8c00;
 }
 
-.section-slider .slider-item-edu .btn {
+.section-slider .edu .btn {
   background-color: #ff8c00;
   color: #fff;
   font-weight: 700;

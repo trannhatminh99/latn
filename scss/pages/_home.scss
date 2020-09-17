@@ -5,6 +5,7 @@
       color: red;
     }
     .btn {
+      border: 1px solid $success;
       background-color: $success;
       color: $white;
       font-weight: 700;
@@ -16,6 +17,7 @@
       color: $primary;
     }
     .btn {
+      border: 1px solid $primary;
       background-color: $primary;
       color: $white;
       font-weight: 700;
@@ -26,6 +28,7 @@
       color: $warning;
     }
     .btn {
+      border: 1px solid $warning;
       background-color: $warning;
       color: $white;
       font-weight: 700;

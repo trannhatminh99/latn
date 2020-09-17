@@ -1,6 +1,36 @@
 .section-slider {
   margin-top: -85px;
+  .slider-item-tech {
+    .slider-text {
+      color: red;
+    }
+    .btn {
+      background-color: $success;
+      color: $white;
+      font-weight: 700;
+    }
+  }
 
+  .slider-item-heath {
+    .slider-text {
+      color: $primary;
+    }
+    .btn {
+      background-color: $primary;
+      color: $white;
+      font-weight: 700;
+    }
+  }
+  .slider-item-edu {
+    .slider-text {
+      color: $warning;
+    }
+    .btn {
+      background-color: $warning;
+      color: $white;
+      font-weight: 700;
+    }
+  }
   .slider-list {
     .slick-slide {
       position: relative;
@@ -83,6 +113,7 @@
     }
 
     .info-content {
+      text-align: justify;
       p {
         @include font-size(20px);
         font-weight: 600;
@@ -111,18 +142,37 @@
           }
         }
         li {
+          &.red {
+            i {
+              color: $success;
+            }
+          }
+          &.blue {
+            i {
+              color: $primary;
+            }
+          }
+          &.orange {
+            i {
+              color: $warning;
+            }
+          }
+          i {
+            margin-left: -35px;
+            margin-right: 14px;
+          }
           &+li {
             margin-top: 6px;
           }
           @include font-size(18px);
           position: relative;
-          &:after {
+          /*&:after {
             font-family: "Font Awesome 5 Free";
             content: '\f0a4';
             position: absolute;
             top: 0;
             left: -24px;
-          }
+          }*/
         }
       }
     }

@@ -11536,7 +11536,7 @@ li {
 }
 
 footer {
-  background-color: #0c1a1e;
+  background-color: #74A858;
   min-height: 350px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -11561,7 +11561,7 @@ footer {
 
 .footer-col p i {
   width: 20px;
-  color: #999;
+  color: #fff;
 }
 
 .footer-ul {
@@ -11604,7 +11604,7 @@ footer {
 .heading7 {
   font-size: 21px;
   font-weight: 700;
-  color: #d9d6d6;
+  color: #fff;
   margin-bottom: 22px;
 }
 
@@ -11685,11 +11685,46 @@ footer {
 }
 
 .footer .footer-content a:hover {
-  color: #6bb42f;
+  color: white;
+}
+
+.footer .footer-copyright a {
+  color: white;
+  text-decoration: none;
 }
 
 .section-slider {
   margin-top: -85px;
+}
+
+.section-slider .slider-item-tech .slider-text {
+  color: red;
+}
+
+.section-slider .slider-item-tech .btn {
+  background-color: red;
+  color: #fff;
+  font-weight: 700;
+}
+
+.section-slider .slider-item-heath .slider-text {
+  color: #6bb42f;
+}
+
+.section-slider .slider-item-heath .btn {
+  background-color: #6bb42f;
+  color: #fff;
+  font-weight: 700;
+}
+
+.section-slider .slider-item-edu .slider-text {
+  color: #ff8c00;
+}
+
+.section-slider .slider-item-edu .btn {
+  background-color: #ff8c00;
+  color: #fff;
+  font-weight: 700;
 }
 
 .section-slider .slider-list .slick-slide {
@@ -11797,6 +11832,10 @@ footer {
   font-weight: 700;
 }
 
+.section-about .about-wrap .info-content {
+  text-align: justify;
+}
+
 .section-about .about-wrap .info-content p {
   font-size: 1.25rem;
   font-weight: 600;
@@ -11828,18 +11867,34 @@ footer {
 .section-about .about-wrap .info-content ul li {
   font-size: 1.125rem;
   position: relative;
+  /*&:after {
+            font-family: "Font Awesome 5 Free";
+            content: '\f0a4';
+            position: absolute;
+            top: 0;
+            left: -24px;
+          }*/
+}
+
+.section-about .about-wrap .info-content ul li.red i {
+  color: red;
+}
+
+.section-about .about-wrap .info-content ul li.blue i {
+  color: #6bb42f;
+}
+
+.section-about .about-wrap .info-content ul li.orange i {
+  color: #ff8c00;
+}
+
+.section-about .about-wrap .info-content ul li i {
+  margin-left: -35px;
+  margin-right: 14px;
 }
 
 .section-about .about-wrap .info-content ul li + li {
   margin-top: 6px;
-}
-
-.section-about .about-wrap .info-content ul li:after {
-  font-family: "Font Awesome 5 Free";
-  content: '\f0a4';
-  position: absolute;
-  top: 0;
-  left: -24px;
 }
 
 @media (min-width: 992px) {

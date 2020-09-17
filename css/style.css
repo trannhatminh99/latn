@@ -11408,7 +11408,7 @@ Header
   .header-navbar {
     background-color: transparent;
   }
-  .header-navbar .bg-primary {
+  .header-navbar .bg-white {
     z-index: 1029;
     -moz-box-shadow: 0 0px 29px 0 rgba(0, 0, 0, 0.8);
     -webkit-box-shadow: 0 0px 29px 0 rgba(0, 0, 0, 0.8);
@@ -11420,7 +11420,7 @@ Header
     color: #1f2839;
   }
   .header-navbar .nav-item:hover .nav-link, .header-navbar .nav-item:focus .nav-link, .header-navbar .nav-item:active .nav-link {
-    color: #fff;
+    color: #6bb42f;
   }
   .header-navbar .nav-item:hover .dropdown-menu, .header-navbar .nav-item:focus .dropdown-menu, .header-navbar .nav-item:active .dropdown-menu {
     display: block;
@@ -11453,7 +11453,7 @@ Header
 
 @media (min-width: 1200px) {
   .header-navbar .nav-item .nav-link {
-    color: #fff;
+    color: #6bb42f;
     font-size: 0.875rem;
     font-weight: 600;
     padding: 18px 8px;
@@ -11480,7 +11480,7 @@ Header
   right: 0;
   left: 0;
   top: 0;
-  background-color: #6bb42f;
+  background-color: #fff;
   z-index: 1030;
   position: fixed;
   padding-top: 16px;
@@ -11489,7 +11489,7 @@ Header
   box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
 }
 
-.body-fixed .header .header-navbar .navbar.bg-primary {
+.body-fixed .header .header-navbar .navbar.bg-white {
   background-color: transparent;
   -moz-box-shadow: 0 0px 0px 0 transparent;
   -webkit-box-shadow: 0 0px 0px 0 transparent;
@@ -11702,6 +11702,7 @@ footer {
 }
 
 .section-slider .tech .btn {
+  border: 1px solid red;
   background-color: red;
   color: #fff;
   font-weight: 700;
@@ -11712,6 +11713,7 @@ footer {
 }
 
 .section-slider .heath .btn {
+  border: 1px solid #6bb42f;
   background-color: #6bb42f;
   color: #fff;
   font-weight: 700;
@@ -11722,6 +11724,7 @@ footer {
 }
 
 .section-slider .edu .btn {
+  border: 1px solid #ff8c00;
   background-color: #ff8c00;
   color: #fff;
   font-weight: 700;
@@ -13110,7 +13113,7 @@ footer {
 }
 
 .section-cate-product .article-wrap {
-  height: 800px;
+  max-height: 800px;
   overflow: overlay;
 }
 

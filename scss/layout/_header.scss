@@ -58,7 +58,7 @@ Header
 
   @include media-breakpoint-up(lg) {
     background-color: transparent;
-    .bg-primary {
+    .bg-white {
       z-index: $zindex-fixed - 1;
       -moz-box-shadow: 0 0px 29px 0 rgba(0, 0, 0, 0.8);
       -webkit-box-shadow: 0 0px 29px 0 rgba(0, 0, 0, 0.8);
@@ -76,7 +76,7 @@ Header
 
       @include hover-focus-active {
         .nav-link {
-          color: $white;
+          color: $primary;
         }
         .dropdown-menu {
           display: block;
@@ -120,7 +120,7 @@ Header
   @include media-breakpoint-up(xl) {
     .nav-item {
       .nav-link {
-        color: $white;
+        color: $primary;
         @include font-size(14px);
         font-weight: 600;
         padding: 18px 8px;
@@ -147,7 +147,7 @@ Header
       right: 0;
       left: 0;
       top: 0;
-      background-color: $primary;
+      background-color: $white;
       z-index: $zindex-fixed;
       position: fixed;
       padding-top: 16px;
@@ -156,7 +156,7 @@ Header
       box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.35);
 
       .navbar {
-        &.bg-primary {
+        &.bg-white {
           background-color: transparent;
           -moz-box-shadow: 0 0px 0px 0 transparent;
           -webkit-box-shadow: 0 0px 0px 0 transparent;

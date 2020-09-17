@@ -181,7 +181,7 @@
 
 .section-cate-product {
   .article-wrap {
-    height: 800px;
+    max-height: 800px;
     overflow: overlay;
     .card-article {
       display: block;

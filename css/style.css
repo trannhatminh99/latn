@@ -11496,6 +11496,18 @@ Header
   box-shadow: 0 0px 0px 0 transparent;
 }
 
+.header-navbar .dich-vu-ky-thuat .dropdown-menu .dropdown-item:hover {
+  color: red;
+}
+
+.header-navbar .dich-vu-suc-khoe .dropdown-menu .dropdown-item:hover {
+  color: #6bb42f;
+}
+
+.header-navbar .dich-vu-dao-tao .dropdown-menu .dropdown-item:hover {
+  color: #ff8c00;
+}
+
 /* ==========================================================================
 Content
 ========================================================================== */

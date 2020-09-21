@@ -167,4 +167,33 @@ Header
     }
   }
 }
+.header-navbar {
+  .dich-vu-ky-thuat {
+    .dropdown-menu {
+      .dropdown-item {
+        @include hover {
+          color: $success;
+        }
+      }
+    }
+  }
+  .dich-vu-suc-khoe {
+    .dropdown-menu {
+      .dropdown-item {
+        @include hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+  .dich-vu-dao-tao {
+    .dropdown-menu {
+      .dropdown-item {
+        @include hover {
+          color: $warning;
+        }
+      }
+    }
+  }
+}
 

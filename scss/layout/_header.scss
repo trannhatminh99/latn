@@ -50,7 +50,7 @@ Header
     left: 0;
     z-index: $zindex-fixed;
   }
-  background-color: $primary;
+  background-color: $white;
 
   .logo {
     width: 60px;
@@ -132,7 +132,8 @@ Header
 
 .navbar-toggler-sidebar {
   display: block;
-  color: $white;
+  color: $primary;
+  @include font-size(32px);
   @include hover-focus-active {
     color: $white;
   }

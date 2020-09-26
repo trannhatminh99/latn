@@ -11387,7 +11387,7 @@ Header
 }
 
 .header-navbar {
-  background-color: #6bb42f;
+  background-color: #fff;
 }
 
 @media (max-width: 991.98px) {
@@ -11463,7 +11463,8 @@ Header
 
 .navbar-toggler-sidebar {
   display: block;
-  color: #fff;
+  color: #6bb42f;
+  font-size: 2rem;
 }
 
 .navbar-toggler-sidebar:hover, .navbar-toggler-sidebar:focus, .navbar-toggler-sidebar:active {
@@ -11516,12 +11517,13 @@ Content
 }
 
 .main {
-  margin-top: 111px;
+  margin-top: 189px;
   padding-bottom: 30px;
 }
 
 @media (min-width: 992px) {
   .main {
+    margin-top: 111px;
     margin-top: 0;
   }
 }

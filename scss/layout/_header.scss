@@ -135,7 +135,7 @@ Header
   color: $primary;
   @include font-size(32px);
   @include hover-focus-active {
-    color: $white;
+    color: $primary;
   }
   @include media-breakpoint-up(lg) {
     display: none;

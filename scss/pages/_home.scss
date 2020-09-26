@@ -327,7 +327,10 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  height: 439px;
+  height: 235px;
+  @include media-breakpoint-up(lg) {
+    height: 439px;
+  }
   position: relative;
 
   &:before {

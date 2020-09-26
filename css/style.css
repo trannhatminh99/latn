@@ -12050,13 +12050,19 @@ footer {
   background-size: cover;
   position: relative;
   overflow: hidden;
-  height: 439px;
+  height: 235px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 992px) {
+  .section-core-value {
+    height: 439px;
+  }
 }
 
 .section-core-value:before {

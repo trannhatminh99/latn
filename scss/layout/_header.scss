@@ -95,10 +95,7 @@ Header
       @include font-size(16px);
 
       .btn {
-        color: $primary;
-        @include hover-focus-active {
-          color: $secondary;
-        }
+        color: $white;
       }
 
       .dropdown-user {

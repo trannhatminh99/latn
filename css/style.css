@@ -11438,9 +11438,6 @@ Header
   .header-navbar .form-inline .btn {
     color: #6bb42f;
   }
-  .header-navbar .form-inline .btn:hover, .header-navbar .form-inline .btn:focus, .header-navbar .form-inline .btn:active {
-    color: #1f2839;
-  }
   .header-navbar .form-inline .dropdown-user .dropdown-menu {
     width: 300px;
     padding: 2px;
@@ -11507,6 +11504,10 @@ Header
 
 .header-navbar .dich-vu-dao-tao .dropdown-menu .dropdown-item:hover {
   color: #ff8c00;
+}
+
+.input-group-append .btn i {
+  color: #fff;
 }
 
 /* ==========================================================================

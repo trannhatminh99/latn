@@ -165,6 +165,7 @@ Header
     }
   }
 }
+
 .header-navbar {
   .dich-vu-ky-thuat {
     .dropdown-menu {
@@ -175,6 +176,7 @@ Header
       }
     }
   }
+
   .dich-vu-suc-khoe {
     .dropdown-menu {
       .dropdown-item {
@@ -184,6 +186,7 @@ Header
       }
     }
   }
+
   .dich-vu-dao-tao {
     .dropdown-menu {
       .dropdown-item {
@@ -196,7 +199,9 @@ Header
 }
 
 .input-group-append {
-  .btn i {
-    color: $white;
+  .dropdown-menu {
+    .btn i {
+      color: $white;
+    }
   }
 }

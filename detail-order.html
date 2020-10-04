@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Frontend Seed 4</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="canonical" href="http://">
+  <meta name="title" content="Frontend Seed 4 - Title">
+  <meta name="referrer" content="unsafe-url">
+  <meta name="description" content="Frontend Seed 4 - Description">
+
+  <meta property="fb:app_id" content="your_app_id">
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="article:publisher" content="">
+  <meta property="article:section" content="Article">
+  <meta property="article:published_time" content="">
+  <meta property="article:modified_time" content="">
+  <meta property="og:updated_time" content="">
+  <meta property="og:image" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:creator" content="">
+  <!-- App CSS -->
+  <style>
+    :root {
+      --theme-color: #007bff;
+      --bg-color: #ffffff;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+
+    .app-loading {
+      background: var(--bg-color);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes bouncing-loader {
+      to {
+        opacity: 0.1;
+        transform: translate3d(0, -1rem, 0);
+      }
+    }
+
+    .app-loading .bouncing-loader {
+      display: flex;
+      justify-content: center;
+    }
+
+    .app-loading .bouncing-loader > div {
+      width: 1rem;
+      height: 1rem;
+      margin: 3rem 0.2rem;
+      background: var(--theme-color);
+      border-radius: 50%;
+      animation: bouncing-loader 0.6s infinite alternate;
+    }
+
+    .app-loading .bouncing-loader > div:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .app-loading .bouncing-loader > div:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+  </style>
+  <link rel='preload' href='dist/app.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="dist/app.min.css">
+  </noscript>
+  <!--  <link rel="stylesheet" href="css/style.css">-->
+  <link rel="stylesheet" href="customs/style.css">
+</head>
+
+<body>
+<div class="app-loading">
+  <div class="bouncing-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<div class="wrapper" id="site_wrapper">
+  <header class="header" id="header">
+    <div class="header-top">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="tel:08 99 315 270"><i class="fas fa-phone"></i><span>08 99 315 270</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:daivuongsaigon@gmail.com"><i
+              class="far fa-envelope-open"></i><span>daivuongsaigon@gmail.com</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i
+              class="far fa-clock"></i><span>Giờ làm việc : Từ 8h - 17h (T2-T7)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button class="btn btn-white">Mua hàng ngay</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-navbar">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo.jpg" alt=""></a>
+          <button class="btn navbar-toggler-sidebar js-toggleAside d-lg-none" type="button">
+            Menu
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Giới thiệu</a>
+              </li>
+              <li class="nav-item dropdown dich-vu-ky-thuat">
+                <a class="nav-link dropdown-toggle" href="tech.html">
+                  Dịch vụ kỹ thuật
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a>
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                    công nghiệp</a>
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế và thi công điện công trình dân dụng và công
+                    nghiệp</a>
+                  <a class="dropdown-item" href="#">Thi công, bảo trì các công trình viễn thông</a>
+                  <a class="dropdown-item" href="#">Nghiên cứu, thiết kế và thi công các hệ thống IoT</a>
+                  <a class="dropdown-item" href="#">Thiết kế website </a>
+                  <a class="dropdown-item" href="#">Gia công phần mềm</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown dich-vu-suc-khoe">
+                <a class="nav-link dropdown-toggle" href="health.html">
+                  Dịch vụ sức khỏe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Giới thiệu</a>
+                  <a class="dropdown-item" href="#">Tư vấn, thiết kế, thi công các phòng tập thể dục</a>
+                  <a class="dropdown-item" href="#">Bảo trì, sửa chữa các thiết bị phòng tập thể dục</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown dich-vu-dao-tao">
+                <a class="nav-link dropdown-toggle" href="edu.html">
+                  Dịch vụ đào tạo
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Đào tạo nguồn nhân lực</a>
+                  <a class="dropdown-item" href="#">Cung ứng nguồn nhân lực</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <div class="dropdown dropdown-user">
+                <buttun class="btn" type="button" id="dropdownSearch" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><i class="fas fa-search"></i></buttun>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownSearch">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username"
+                           aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-secondary" type="button" id="button-addon2"><i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="btn" type="button" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><i class="fas fa-user"></i></button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownUser">
+                  <a class="dropdown-item" href="#">Đăng nhập</a>
+                  <a class="dropdown-item" href="#">Đăng ký</a>
+                </div>
+              </div>
+              <button class="btn" type="button"><i class="fas fa-cart-plus"></i></button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main" id="main">
+    <div class="main-menu">
+      <button class="btn btn-close js-close-toggleAside" type="button">ĐÓNG <i class="fas fa-times"></i></button>
+      <form class="input-group input-search">
+        <input type="text" class="form-control" placeholder="Nhập từ khoá" aria-label="Text input with dropdown button">
+        <div class="input-group-append">
+          <button class="btn" type="button"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+      <ul class="main-aside-nav">
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fa fa-home"></i>
+            <span>Trang chủ</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="far fa-comment"></i>
+            <span>Giới thiệu</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item-has-sub">
+          <button class="btn btn-block d-flex justify-content-between" type="button" data-toggle="collapse"
+                  data-target="#collapserTech" aria-expanded="false" aria-controls="collapserTech">
+            <a href="#" class="text-decoration-none"><span class="text-white ">Dịch vụ kỹ thuật</span></a>
+
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="collapse" id="collapserTech">
+            <ul class="main-aside-navsub">
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a></li>
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                công nghiệp</a></li>
+              <li><a class="nav-link" href="#">Đồng hồ đo nhiệt độ</a></li>
+              <li><a class="nav-link" href="#">THIẾT BỊ PHÂN TÍCH NƯỚC</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item nav-item-has-sub">
+          <button class="btn btn-block d-flex justify-content-between" type="button" data-toggle="collapse"
+                  data-target="#collapserEdu" aria-expanded="false" aria-controls="collapserEdu">
+            <a href="#" class="text-decoration-none"><span class="text-white ">Dịch vụ kỹ thuật</span></a>
+
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="collapse" id="collapserEdu">
+            <ul class="main-aside-navsub">
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công điện năng lượng mặt trời </a></li>
+              <li><a class="nav-link" href="#">Tư vấn, thiết kế và thi công các công trình chiếu sáng dân dụng và
+                công nghiệp</a></li>
+              <li><a class="nav-link" href="#">Đồng hồ đo nhiệt độ</a></li>
+              <li><a class="nav-link" href="#">THIẾT BỊ PHÂN TÍCH NƯỚC</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="far fa-envelope"></i>
+            <span>Liên hệ </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="section section-detail-order">
+      <div class="container">
+        <div class="row mt-4" >
+          <div class="col-12 col-lg-8">
+            <h3 class="h3">Tài khoản của bạn</h3>
+            <hr>
+            <h5 class="h5">Đơn hàng #100841</h5>
+            <hr>
+            <h6 class="h6">Ngày 09/30/2020 01:38:30</h6>
+            <table class="table table-bordered">
+              <thead>
+              <tr>
+                <th scope="col">Sản phẩm</th>
+                <th scope="col">Mã sản phẩm</th>
+                <th scope="col">Giá</th>
+                <th scope="col">Sô lượng</th>
+                <th scope="col">Tổng</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <th scope="row">Bộ tưới cây nhỏ giọt GF KIT 12 - Hàng Ý - Default Title</th>
+                <td>GF KIT 12</td>
+                <td>530,000 ₫</td>
+                <td>2</td>
+                <td>1,060,000 ₫</td>
+              </tr>
+              <tr>
+                <th colspan="4">Tổng</th>
+                <td>1,060,000 ₫</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h5 class="h5">Địa chỉ thanh toán</h5>
+            <hr>
+            <h6 class="h6">Trần Nhật Minh</h6>
+            <h6 class="h6">tnminh.it99@gmail.com</h6>
+            <h6 class="h6">0899315270</h6>
+            <h6 class="h6">67/12 Trần xuân soạn quận 7</h6>
+            <h6 class="h6">Tình trạng giao hàng: chờ đợi</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 footer-col">
+            <div class="footer-img"><img src="images/logo-white.png" alt=""></div>
+            <!--          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>-->
+            <p class="mt-4"><i class="fas fa-map-marker-alt"></i> 163/21/11F Tô Hiến Thành, Phường 13, Quận 10, TP. Hồ
+              Chí Minh</p>
+            <p class="mt-3"><i class="far fa-clock"></i> Thứ 2 - Thứ 7: Từ 9h - 17h</p>
+            <p class="mt-3"><i class="fa fa-phone"></i> Điện thoại: <a href="tel:(+84) 08 99 315 270">08 99 315 270
+              270</a></p>
+            <p class="mt-3"><i class="fa fa-envelope"></i> Email: <a href="mailto:info@gmail.com">daivuongsaigon@gmail.com</a>
+            </p>
+
+          </div>
+          <div class="col-md-3 col-sm-6 footer-col">
+            <h6 class="heading7">MENU</h6>
+            <ul class="footer-ul">
+              <li><a href="#"> Trang chủ</a></li>
+              <li><a href="#"> Giới thiệu</a></li>
+              <li><a href="#"> Dịch vụ kỹ thuật</a></li>
+              <li><a href="#"> Dịch vụ sức khoẻ</a></li>
+              <li><a href="#"> Dịch vụ đào tạo</a></li>
+              <li><a href="#"> Tin tức</a></li>
+              <li><a href="#"> Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 footer-col">
+            <h6 class="heading7">SẢN PHẨM TƯỚI</h6>
+            <div class="post">
+              <p><a href="#">Khung gánh đùi Half rack PL350 </a><span>Minh Tran 09, 2020</span></p>
+              <p><a href="#">Xe đạp thể dục Impetus-IV-8000a </a><span>Minh Tran 09, 2020</span></p>
+              <p><a href="#">Bộ Biến Điện Inverter Fronius Primo 5.0-1 </a><span>Minh Tran 09, 2020</span></p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 footer-col">
+            <h6 class="heading7">FACEBOOK CHÚNG TÔI</h6>
+            <ul class="footer-social">
+              <div id="fb-root"></div>
+              <script async defer crossorigin="anonymous"
+                      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=2881242605330025&autoLogAppEvents=1"
+                      nonce="IB08oXmB"></script>
+              <div class="fb-page"
+                   data-href="https://www.facebook.com/%C4%90%E1%BA%A1i-V%C6%B0%C6%A1ng-S%C3%A0i-G%C3%B2n-110547934127043/?modal=admin_todo_tour"
+                   data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
+                   data-hide-cover="false" data-show-facepile="true">
+                <blockquote
+                  cite="https://www.facebook.com/%C4%90%E1%BA%A1i-V%C6%B0%C6%A1ng-S%C3%A0i-G%C3%B2n-110547934127043/?modal=admin_todo_tour"
+                  class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/%C4%90%E1%BA%A1i-V%C6%B0%C6%A1ng-S%C3%A0i-G%C3%B2n-110547934127043/?modal=admin_todo_tour">Đại
+                  Vương Sài Gòn</a></blockquote>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-end page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3 text-white">Copyrights © 2020 by
+        <a href="https://mdbootstrap.com/">ĐẠI VƯƠNG SÀI GÒN</a>
+      </div>
+      <!-- Copyright -->
+
+    </div>
+  </footer>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<!-- Core JavaScript -->
+<!--<script src="dist/core.min.js"></script>-->
+<script src="third_party/modernizr.min.js"></script>
+<script src="third_party/slick/slick/slick.js"></script>
+<script src="third_party/lazyload/lazyload.min.js.map"></script>
+<!-- End Core JavaScript -->
+
+<!-- JavaScript -->
+<!--<script src="dist/app.min.js"></script>-->
+<script src="js/common.js"></script>
+<script src="customs/script.js"></script>
+<!-- End JavaScript -->
+</body>
+</html>

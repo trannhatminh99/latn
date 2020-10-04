@@ -55,7 +55,7 @@
     color: $white;
     top: 45%;
     .slider-text {
-      @include font-size(20px);
+      @include font-size(13px);
       @include media-breakpoint-up(lg) {
         @include font-size(40px);
       }

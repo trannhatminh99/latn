@@ -23,7 +23,9 @@
   .content {
     @include center(true, true);
     z-index: 2;
-
+    @include media-breakpoint-down(md) {
+      width: 300px;
+    }
     .breadcrumb-title {
       color: $white;
       text-transform: uppercase;
@@ -37,6 +39,9 @@
       a {
         color: $white;
         @include font-size(14px);
+        @include media-breakpoint-up(lg) {
+          @include font-size(14px);
+        }
         text-decoration: none;
         text-transform: uppercase;
         @include hover {

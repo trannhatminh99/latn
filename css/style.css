@@ -11773,7 +11773,7 @@ footer {
 }
 
 .section-slider .slider-content .slider-text {
-  font-size: 1.25rem;
+  font-size: 0.8125rem;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -13266,6 +13266,12 @@ footer {
   z-index: 2;
 }
 
+@media (max-width: 991.98px) {
+  .section-breadcrumb .content {
+    width: 300px;
+  }
+}
+
 .section-breadcrumb .content .breadcrumb-title {
   color: #fff;
   text-transform: uppercase;
@@ -13295,6 +13301,12 @@ footer {
   font-size: 0.875rem;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .section-breadcrumb .content .breadcrumb-small a {
+    font-size: 0.875rem;
+  }
 }
 
 .section-breadcrumb .content .breadcrumb-small a:hover {

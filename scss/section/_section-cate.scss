@@ -248,4 +248,49 @@
     }
   }
 }
+.category-dich-vu-suc-khoe {
+  h1 {
+    color: $primary;
+    @include font-size(32px);
+  }
+}
+.category-dich-vu-dao-tao {
+  @include font-size(24px);
+  font-weight: 600;
+  text-align: justify;
+}
+.about {
+  p {
+    text-align: justify;
+    @include font-size(20px);
+  }
+  ul {
+    li {
+        @include font-size(18px);
+    }
+  }
+}
+.category-dich-vu-suc-khoe,.about, .category-dich-vu-suc-khoe {
+  ul {
+    li {
+      line-height: 30px;
+      position: relative;
+      margin-left: 35px;
+      &:after {
+        content: '\f00c';
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        position: absolute;
+        left: -30px;
+        top: 0;
+      }
+      strong {
+        @include font-size(20px);
+      }
+    }
+  }
+}
 

@@ -13241,6 +13241,48 @@ footer {
   text-decoration: none;
 }
 
+.category-dich-vu-suc-khoe h1 {
+  color: #6bb42f;
+  font-size: 2rem;
+}
+
+.category-dich-vu-dao-tao {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.about p {
+  text-align: justify;
+  font-size: 1.25rem;
+}
+
+.about ul li {
+  font-size: 1.125rem;
+}
+
+.category-dich-vu-suc-khoe ul li, .about ul li, .category-dich-vu-suc-khoe ul li {
+  line-height: 30px;
+  position: relative;
+  margin-left: 35px;
+}
+
+.category-dich-vu-suc-khoe ul li:after, .about ul li:after, .category-dich-vu-suc-khoe ul li:after {
+  content: '\f00c';
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+.category-dich-vu-suc-khoe ul li strong, .about ul li strong, .category-dich-vu-suc-khoe ul li strong {
+  font-size: 1.25rem;
+}
+
 .section-breadcrumb {
   margin-top: -85px;
   height: 300px;

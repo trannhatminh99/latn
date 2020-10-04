@@ -1,4 +1,9 @@
 .section-slider {
+  .slider-item {
+    @include media-breakpoint-up(lg) {
+      height: 450px;
+    }
+  }
   margin-top: -85px;
   .tech {
     .slider-text {

@@ -11712,6 +11712,12 @@ footer {
   margin-top: -85px;
 }
 
+@media (min-width: 992px) {
+  .section-slider .slider-item {
+    height: 450px;
+  }
+}
+
 .section-slider .tech .slider-text {
   color: red;
 }
